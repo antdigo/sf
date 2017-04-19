@@ -1,0 +1,52 @@
+.promo_about {
+    font-size   : 24px;
+    line-height : 1.4;
+    font-weight : 300;
+    background  : url("promo_about.jpg") 50% 100%/cover no-repeat
+}
+
+.promo_about strong {
+    color       : #e84810;
+    font-weight : 400;
+}
+
+@media (max-width : 479px) {
+    .promo_about .promo__container {
+        max-width : 280px;
+    }
+}
+
+@media (max-width : 767px) {
+    .promo_about {
+        padding-top         : 25px;
+        padding-bottom      : 40px;
+        background-position : 23% 100%;
+    }
+}
+
+@media (min-width : 480px) and (max-width : 767px) {
+    .promo_about .promo__container {
+        max-width : 420px;
+    }
+}
+
+@media (min-width : 768px) {
+    .promo_about .promo__container {
+        font-size : 38px;
+        max-width : 920px;
+    }
+}
+
+@media (min-width : 768px) and (max-width : 1199px) {
+    .promo_about {
+        padding-top    : 40px;
+        padding-bottom : 60px;
+    }
+}
+
+@media (min-width : 1200px) {
+    .promo_about {
+        padding-top    : 90px;
+        padding-bottom : 120px;
+    }
+}

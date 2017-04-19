@@ -1,0 +1,58 @@
+.promo,
+.promo__container,
+.promo__hero {
+    display : block;
+    margin  : 0;
+    padding : 0;
+}
+
+.promo {
+    overflow : hidden;
+}
+
+.promo__container {
+    max-width : 1170px;
+    margin    : 0 auto;
+}
+
+.promo__title {
+    display : inline;
+}
+
+@media (max-width : 767px) {
+    .promo__container {
+        padding : 0 20px;
+    }
+}
+
+@media (min-width : 768px) {
+    .promo__container {
+        padding : 0 30px;
+    }
+}
+
+@media (min-width : 1024px) {
+    .promo_stack {
+        display         : flex;
+        justify-content : flex-start;
+        align-items     : stretch;
+    }
+
+    .promo_stack > * {
+        width : 50%;
+    }
+
+    .promo_stack > *:nth-child(2n+1) .promo__container {
+        margin : 0 0 0 auto;
+    }
+
+    .promo_stack > *:nth-child(2n) .promo__container {
+        margin : 0 auto 0 0;
+    }
+
+    .promo_stack .promo__container {
+        box-sizing : border-box;
+        width      : 585px !important;
+        max-width  : none !important;
+    }
+}

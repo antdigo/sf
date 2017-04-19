@@ -1,0 +1,98 @@
+.client {
+
+}
+
+.client__header {
+    display : block;
+    margin  : 15px 0;
+}
+
+.client__content {
+    position   : relative;
+    padding    : 45px 20px 0;
+    background : url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDU1IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjA1NSAyNCI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiPjxwYXRoIHN0cm9rZT0iIzFEMUQxQiIgZD0iTTEgMjNoMTAwMGwyNi41LTE1IDI2LjUgMTVoMTAwMCIvPjxwYXRoIHN0cm9rZT0iI0U4NDgxMCIgZD0iTTEgMTdoMTAwMGwyNi41LTE1IDI2LjUgMTVoMTAwMCIvPjwvZz48L3N2Zz4=") 50% 0 no-repeat;
+}
+
+.client__avatar {
+    display       : block;
+    width         : 133px;
+    height        : 133px;
+    margin        : auto;
+    border-radius : 50%;
+    background    : url("client__avatar.jpg") 50% 50%/cover no-repeat;
+}
+
+.client a {
+    color           : inherit;
+    text-decoration : underline;
+}
+
+.client a:hover {
+    text-decoration : none;
+}
+
+.client__feedback {
+    color       : #666;
+    font-size   : 14px;
+    line-height : 1.5;
+}
+
+.client__person {
+    margin-top : 30px;
+}
+
+.client__name {
+    margin-bottom : 10px;
+    color         : #333;
+    font-size     : 15px;
+    line-height   : 1.73333333;
+    font-weight   : 700;
+}
+
+.client__about {
+    color       : #333;
+    font-size   : 13px;
+    line-height : 1.61538462;
+}
+
+.client__row_recommendation {
+    padding    : 25px 0;
+    font-size  : 0;
+    text-align : center;
+}
+
+.client__recommendation {
+    display        : inline-block;
+    border-radius  : 5px;
+    padding        : 4px 25px;
+    color          : #1d1d1b;
+    font-size      : 11px;
+    line-height    : 1.66667;
+    text-transform : uppercase;
+    cursor         : pointer;
+}
+
+.client__recommendation:hover {
+    background : #6a6a6a;
+    color      : #fff;
+}
+
+.client__recommendation:after {
+    content       : "Запросить личную рекомендацию";
+    border-bottom : 1px dashed;
+}
+
+.client__recommendation:hover:after {
+    border-bottom-color : transparent;
+}
+
+@media (min-width : 768px) {
+    .client__content {
+        padding-left  : 0;
+        padding-right : 0;
+    }
+
+    .client__row_recommendation {
+        padding : 40px 0;
+    }
+}

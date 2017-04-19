@@ -1,0 +1,48 @@
+.page {
+    display        : flex;
+    flex-direction : column;
+    min-height     : 100vh;
+    padding        : 0;
+    margin         : 0;
+    font-family    : 'Open Sans', sans-serif;
+}
+
+.page__header {
+    padding : 25px 0;
+}
+
+.page__content {
+    flex        : 1;
+    padding     : 0;
+    font-size   : 14px;
+    line-height : 1.85714286;
+}
+
+.page__content h1 {
+    font-size   : 32px;
+    line-height : 1.125;
+    font-weight : 400;
+}
+
+.page__content h2 {
+    font-size   : 26px;
+    line-height : 1.38461538;
+    font-weight : 400;
+}
+
+.page__main, .page__breadcrumb {
+    width  : 100%;
+    margin : 0 auto;
+}
+
+@media (min-width : 768px) and (max-width : 1199px) {
+    .page__main, .page__breadcrumb {
+        max-width : 700px;
+    }
+}
+
+@media (min-width : 1200px) {
+    .page__main, .page__breadcrumb {
+        max-width : 1170px;
+    }
+}

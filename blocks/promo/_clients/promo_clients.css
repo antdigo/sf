@@ -1,0 +1,64 @@
+.promo_clients {
+    background : #fbfbfb;
+    padding    : 20px 0 30px;
+}
+
+.promo_clients .promo__container {
+    padding : 0;
+}
+
+.promo_clients .promo__header {
+    margin     : 0 0 .5em;
+    color      : #1d1d1b;
+    font-size  : 26px;
+    text-align : center;
+}
+
+.promo_clients .promo__client {
+    box-sizing : border-box;
+    display    : block;
+    width      : 100%;
+}
+
+.promo_clients .flickity-prev-next-button {
+    background : none;
+    transform  : none;
+    top        : 60px;
+}
+
+.promo_clients .flickity-page-dots {
+    position : static;
+}
+
+.promo_clients .flickity-page-dots .dot {
+    box-sizing : border-box;
+    border     : 1px solid #3e3e3e;
+    background : none;
+    opacity    : 1;
+}
+
+.promo_clients .flickity-page-dots .dot:hover,
+.promo_clients .flickity-page-dots .dot.is-selected {
+    background   : #e84810;
+    border-color : #e84810;
+}
+
+@media (min-width : 768px) {
+    .promo_clients {
+        padding-bottom : 40px;
+    }
+
+    .promo_clients .promo__header {
+        font-size   : 39px;
+        font-weight : 300;
+    }
+
+    .promo_clients .promo__client {
+        padding : 0 90px;
+    }
+
+    .promo_clients .flickity-prev-next-button {
+        width : 70px;
+        top   : 160px;
+    }
+}

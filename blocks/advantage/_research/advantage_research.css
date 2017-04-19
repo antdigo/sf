@@ -1,0 +1,33 @@
+.advantage_research:before {
+    background-image : url("advantage_research.png");
+}
+
+@media (max-width : 479px) {
+    .advantage_research:before {
+        padding-bottom      : 92.00492%;
+        background-position : 80% 100%;
+    }
+}
+
+@media (min-width : 480px) and (max-width : 767px) {
+    .advantage_research:before {
+        padding-bottom : 46.00246%;
+    }
+}
+
+@media (min-width : 768px) {
+    .advantage_research {
+        margin-left  : auto;
+        margin-right : 0;
+    }
+
+    .advantage_research:before {
+        height              : 100%;
+        width               : 768px;
+        margin-right        : 50px;
+        position            : absolute;
+        right               : 100%;
+        background-size     : contain;
+        background-position : 100% 50%;
+    }
+}
