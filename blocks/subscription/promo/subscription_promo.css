@@ -25,6 +25,7 @@
     width              : 100%;
     outline            : none;
     border             : 1px solid #a9a9a9;
+    border-radius      : 0;
     margin             : 20px 0;
     padding            : 9px 17px 7px;
     background         : #fff;
