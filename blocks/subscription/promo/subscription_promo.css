@@ -20,33 +20,39 @@
 }
 
 .subscription__input {
-    box-sizing  : border-box;
-    display     : block;
-    width       : 100%;
-    outline     : none;
-    border      : 1px solid #a9a9a9;
-    margin      : 20px 0;
-    padding     : 9px 17px 7px;
-    background  : #fff;
-    color       : #666;
-    font-size   : 14px;
-    line-height : 1;
+    box-sizing         : border-box;
+    display            : block;
+    width              : 100%;
+    outline            : none;
+    border             : 1px solid #a9a9a9;
+    margin             : 20px 0;
+    padding            : 9px 17px 7px;
+    background         : #fff;
+    color              : #666;
+    font-size          : 14px;
+    line-height        : 1;
+    -webkit-appearance : none;
+    -moz-appearance    : none;
+    appearance         : none;
 }
 
 .subscription__submit {
-    display        : block;
-    width          : 100%;
-    outline        : none;
-    border         : 0;
-    border-radius  : 5px;
-    margin         : 20px 0 0;
-    padding        : 10px 25px;
-    background     : #e84810;
-    color          : #fff;
-    font-size      : 14px;
-    line-height    : 1;
-    text-transform : uppercase;
-    cursor         : pointer;
+    display            : block;
+    width              : 100%;
+    outline            : none;
+    border             : 0;
+    border-radius      : 5px;
+    margin             : 20px 0 0;
+    padding            : 10px 25px;
+    background         : #e84810;
+    color              : #fff;
+    font-size          : 14px;
+    line-height        : 1;
+    text-transform     : uppercase;
+    cursor             : pointer;
+    -webkit-appearance : none;
+    -moz-appearance    : none;
+    appearance         : none;
 }
 
 .subscription__submit:hover {

@@ -15,15 +15,18 @@
 
 .feedback__input,
 .feedback__text {
-    box-sizing  : border-box;
-    display     : block;
-    width       : 100%;
-    border      : 1px solid #cecece;
-    background  : #fff;
-    color       : #394149;
-    font-size   : 16px;
-    line-height : 1;
-    padding     : 12px 15px 14px;
+    box-sizing         : border-box;
+    display            : block;
+    width              : 100%;
+    border             : 1px solid #cecece;
+    background         : #fff;
+    color              : #394149;
+    font-size          : 16px;
+    line-height        : 1;
+    padding            : 12px 15px 14px;
+    -webkit-appearance : none;
+    -moz-appearance    : none;
+    appearance         : none;
 }
 
 .feedback__text {
@@ -72,20 +75,23 @@
 }
 
 .feedback__submit {
-    display        : block;
-    width          : 100%;
-    outline        : none;
-    border         : none;
-    border-radius  : 5px;
-    margin         : 25px 0 0;
-    padding        : 18px 25px;
-    background     : #e84810;
-    color          : #fff;
-    font-size      : 17px;
-    line-height    : 1;
-    font-weight    : 700;
-    text-transform : uppercase;
-    cursor         : pointer;
+    display            : block;
+    width              : 100%;
+    outline            : none;
+    border             : none;
+    border-radius      : 5px;
+    margin             : 25px 0 0;
+    padding            : 18px 25px;
+    background         : #e84810;
+    color              : #fff;
+    font-size          : 17px;
+    line-height        : 1;
+    font-weight        : 700;
+    text-transform     : uppercase;
+    cursor             : pointer;
+    -webkit-appearance : none;
+    -moz-appearance    : none;
+    appearance         : none;
 }
 
 .feedback__submit:hover {
