@@ -1,0 +1,135 @@
+.main-menu,
+.main-menu__item,
+.main-menu__link {
+    display : block;
+    margin  : 0;
+    padding : 0;
+}
+
+.main-menu {
+    font-size : 0;
+}
+
+.main-menu__item .main-menu {
+    display : none !important;;
+}
+
+.main-menu__item:hover .main-menu {
+    display : block !important;;
+}
+
+.main-menu__item {
+
+}
+
+.main-menu__link {
+    color           : inherit;
+    font-size       : 14px;
+    line-height     : 20px;
+    text-decoration : none;
+}
+
+@media (max-width : 767px) {
+    .main-menu {
+        display : none;
+    }
+
+    .main-menu__item {
+        border-top     : 1px solid #444445;
+        color          : #fff;
+        background     : #231f20;
+        text-transform : uppercase;
+        text-align     : center;
+    }
+
+    .main-menu__item:first-child {
+        border-top : 0;
+    }
+
+    .main-menu__item .main-menu__item {
+        border-top     : 1px solid #444445;
+        background     : #3a3a3a;
+        text-transform : none;
+    }
+
+    .main-menu__item_active,
+    .main-menu__item:hover {
+        background : #f05423;
+    }
+
+    .main-menu__link {
+        padding : 10px 20px;
+    }
+}
+
+@media (min-width : 768px) {
+    .main-menu {
+        display : inline-block !important;
+    }
+
+    .main-menu__item {
+        display        : inline-block;
+        position       : relative;
+        color          : #000;
+        text-transform : uppercase;
+    }
+
+    .main-menu__item + .main-menu__item {
+        margin-left : 30px;
+    }
+
+    .main-menu__item .main-menu {
+        width    : 160px;
+        padding  : 15px 0 10px;
+        position : absolute;
+    }
+
+    .main-menu__item .main-menu:before {
+        content       : "";
+        position      : absolute;
+        left          : 0;
+        right         : 0;
+        top           : 5px;
+        bottom        : 0;
+        border-radius : 5px;
+        background    : #fff;
+        box-shadow    : 1px 1px 1px 1px rgba(50, 50, 50, 0.2);
+    }
+
+    .main-menu__item .main-menu__item {
+        display        : block;
+        margin         : 0;
+        position       : relative;
+        text-transform : none;
+    }
+
+    .main-menu__item .main-menu__item .main-menu__link {
+        padding     : 5px 15px;
+        line-height : 1.2;
+    }
+
+    .main-menu__item .main-menu__item .main-menu__link:hover {
+
+    }
+
+    .main-menu__item_active,
+    .main-menu__item:hover {
+        color : #f05423;
+    }
+
+    .main-menu__item .main-menu__item_active,
+    .main-menu__item .main-menu__item:hover {
+        background : #ededed;
+        color      : #000;
+    }
+}
+
+@media (min-width : 1200px) {
+    .main-menu__item + .main-menu__item {
+        margin-left : 40px;
+    }
+
+    .main-menu__item .main-menu__item {
+        margin : 0;
+    }
+}

@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
     <link href="https://unpkg.com/flickity@2/dist/flickity.min.css" rel="stylesheet">
+    <link href="blocks/main-menu/main-menu.css" rel="stylesheet">
     <link href="blocks/promo/promo.css" rel="stylesheet">
     <link href="blocks/promo/about/promo_about.css" rel="stylesheet">
     <link href="blocks/promo/specialization/promo_specialization.css" rel="stylesheet">
@@ -39,7 +40,39 @@
             <div class="header__menu-toggle"></div>
         </div>
         <div class="header__row header__row_menu">
-            <div class="main-menu header__menu"></div>
+            <div class="header__menu">
+                <ul class="main-menu">
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="#">Услуги</a>
+                        <ul class="main-menu">
+                            <li class="main-menu__item">
+                                <a class="main-menu__link" href="#">Проектное исследование</a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a class="main-menu__link" href="#">Отчетность</a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a class="main-menu__link" href="#">SMM</a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a class="main-menu__link" href="#">Рекламная компания</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-menu__item main-menu__item_active">
+                        <a class="main-menu__link" href="#">Ход работ</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="#">Люди</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="#">Блог</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </header>
@@ -281,6 +314,7 @@
 </footer>
 <script src="https://yastatic.net/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="blocks/main-menu/main-menu.js"></script>
 <script src="blocks/promo/specialization/promo_specialization.js"></script>
 <script src="blocks/promo/clients/promo_clients.js"></script>
 </body>
