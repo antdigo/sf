@@ -1,0 +1,128 @@
+.rubrics {
+    overflow  : hidden;
+    display   : block;
+    max-width : 1170px;
+    margin    : 0 auto;
+    font-size : 0;
+}
+
+.rubrics__items {
+    margin : 40px auto;
+}
+
+.rubrics__item {
+    display        : inline-block;
+    margin         : 0 40px 10px 0;
+    color          : #000;
+    font-size      : 26px;
+    line-height    : 1.2;
+    font-weight    : 400;
+    text-transform : uppercase;
+    cursor         : pointer;
+}
+
+.rubrics__item_active,
+.rubrics__item:hover {
+    color : #e84810;
+}
+
+.rubrics__sorters {
+    margin : 40px auto;
+}
+
+.rubrics__sorter {
+    display        : inline-block;
+    border-bottom  : 1px dashed;
+    margin         : 0 40px 10px 0;
+    color          : #000;
+    font-size      : 20px;
+    line-height    : 1.2;
+    font-weight    : 400;
+    text-transform : lowercase;
+    cursor         : pointer;
+}
+
+.rubrics__sorter_active,
+.rubrics__sorter:hover {
+    color               : #e84810;
+    border-bottom-color : transparent;
+}
+
+.rubrics__row_more {
+    margin     : 40px 0 50px;
+    text-align : center;
+}
+
+.rubrics__more {
+    display       : inline-block;
+    border-bottom : 1px dashed;
+    margin        : 0 40px 10px 0;
+    color         : #000;
+    font-size     : 20px;
+    line-height   : 1.2;
+    font-weight   : 400;
+    cursor        : pointer;
+}
+
+.rubrics__more:hover {
+    color               : #e84810;
+    border-bottom-color : transparent;
+}
+
+.rubrics__more:before {
+    content : "Показать еще";
+}
+
+.rubrics__more:after {
+    content        : "\e900";
+    display        : inline-block;
+    vertical-align : middle;
+    margin-left    : 8px;
+    position       : relative;
+    top            : -1px;
+    font-family    : 'sf';
+    font-size      : 10px;
+}
+
+.rubrics__row_publication {
+    display   : block;
+    margin    : 0 -15px;
+    font-size : 0;
+}
+
+.rubrics__publication {
+    box-sizing     : border-box;
+    display        : inline-block;
+    vertical-align : top;
+    margin         : 0 0 25px;
+    padding        : 0 15px;
+    width          : 100%;
+}
+
+@media (max-width : 767px) {
+    .rubrics {
+        padding : 10px 20px;
+    }
+
+    .rubrics__items {
+        margin-top : 0;
+    }
+}
+
+@media (min-width : 480px) and (max-width : 991px) {
+    .rubrics__publication {
+        width : 50%;
+    }
+}
+
+@media (min-width : 768px) and (max-width : 1199px) {
+    .rubrics {
+        padding : 20px 30px;
+    }
+}
+
+@media (min-width : 992px) {
+    .rubrics__publication {
+        width : 25%;
+    }
+}

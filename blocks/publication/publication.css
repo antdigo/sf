@@ -1,0 +1,143 @@
+.publication,
+.publication__row {
+    display : block;
+    padding : 0;
+    margin  : 0;
+}
+
+.publication__row {
+    position : relative;
+}
+
+.publication__image-link {
+    display  : block;
+    position : relative;
+}
+
+.publication__image-link:after {
+    content    : "";
+    display    : block;
+    position   : absolute;
+    top        : 0;
+    right      : 0;
+    bottom     : 0;
+    left       : 0;
+    background : #000;
+    opacity    : 0;
+    transition : opacity 0.2s linear 0s;
+}
+
+.publication__image-link:hover:after {
+    opacity : 0.3;
+}
+
+.publication__image {
+    display : block;
+    outline : 0;
+    border  : 0;
+    margin  : 0;
+    padding : 0;
+    width   : 100%;
+    height  : auto;
+}
+
+.publication__type {
+    display         : block;
+    border-radius   : 0 3px 3px 0;
+    margin          : 0;
+    padding         : 15px;
+    position        : absolute;
+    bottom          : 25px;
+    left            : 0;
+    background      : #e84810;
+    color           : #fff;
+    font-size       : 16px;
+    line-height     : 1;
+    font-weight     : 400;
+    text-decoration : none;
+}
+
+.publication__author {
+    display         : inline-block;
+    border-bottom   : 1px solid;
+    margin          : 15px 0;
+    color           : #9f9f9f;
+    font-size       : 18px;
+    line-height     : 1.2;
+    font-weight     : 400;
+    cursor          : pointer;
+    text-decoration : none;
+}
+
+.publication__title {
+    display         : inline-block;
+    margin          : 15px 0;
+    color           : #000;
+    font-size       : 24px;
+    line-height     : 1.5;
+    font-weight     : 400;
+    cursor          : pointer;
+    text-decoration : none;
+}
+
+.publication__teaser {
+    display         : inline-block;
+    margin          : 15px 0;
+    color           : #000;
+    font-size       : 16px;
+    line-height     : 1.4;
+    font-weight     : 400;
+    text-decoration : none;
+}
+
+.publication__likes:before,
+.publication__comments:before,
+.publication__views:before {
+    display                 : inline-block;
+    vertical-align          : middle;
+    margin-right            : 5px;
+    font                    : normal normal normal 14px/1 FontAwesome;
+    font-size               : inherit;
+    text-rendering          : auto;
+    -webkit-font-smoothing  : antialiased;
+    -moz-osx-font-smoothing : grayscale;
+}
+
+.publication__likes:after,
+.publication__comments:after,
+.publication__views:after {
+    content        : attr(data-value);
+    display        : inline-block;
+    vertical-align : middle;
+}
+
+.publication__likes,
+.publication__comments,
+.publication__views {
+    display      : inline-block;
+    margin-right : 10px;
+    color        : #9f9f9f;
+    font-size    : 14px;
+    line-height  : 1.2;
+}
+
+.publication__likes:before {
+    content : "\f08a";
+}
+
+.publication__comments:before {
+    content   : "\f0e5";
+    transform : scale(-1, 1);
+}
+
+.publication__views:before {
+    content : "\f06e";
+}
+
+a.publication__comments:after {
+    border-bottom : 1px solid;
+}
+
+a.publication__comments:hover {
+    color : #e84810;
+}
