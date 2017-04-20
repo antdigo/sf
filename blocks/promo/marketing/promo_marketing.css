@@ -1,0 +1,21 @@
+.promo_marketing {
+    background : #6dcef5;
+}
+
+.promo_marketing .promo__container {
+    display    : block;
+    max-width  : 1170px;
+    margin     : 0 auto;
+}
+
+@media (max-width : 767px) {
+    .promo_marketing .promo__container {
+        padding : 10px 20px;
+    }
+}
+
+@media (min-width : 768px) and (max-width : 1199px) {
+    .promo_marketing .promo__container {
+        padding : 20px 30px;
+    }
+}

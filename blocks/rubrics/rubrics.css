@@ -6,12 +6,23 @@
     font-size : 0;
 }
 
+.rubrics__hashtag {
+    display        : inline-block;
+    vertical-align : bottom;
+    margin         : 0 40px 10px 0;
+    color          : #000;
+    font-size      : 39px;
+    line-height    : 1.2;
+    font-weight    : 300;
+}
+
 .rubrics__items {
     margin : 40px auto;
 }
 
 .rubrics__item {
     display        : inline-block;
+    vertical-align : bottom;
     margin         : 0 40px 10px 0;
     color          : #000;
     font-size      : 26px;
@@ -32,6 +43,7 @@
 
 .rubrics__sorter {
     display        : inline-block;
+    vertical-align : bottom;
     border-bottom  : 1px dashed;
     margin         : 0 40px 10px 0;
     color          : #000;
@@ -99,6 +111,10 @@
     width          : 100%;
 }
 
+.rubrics__publication_x2 {
+    width : 100%;
+}
+
 @media (max-width : 767px) {
     .rubrics {
         padding : 10px 20px;
@@ -113,6 +129,10 @@
     .rubrics__publication {
         width : 50%;
     }
+
+    .rubrics__publication_x2 {
+        width : 100%;
+    }
 }
 
 @media (min-width : 768px) and (max-width : 1199px) {
@@ -124,5 +144,9 @@
 @media (min-width : 992px) {
     .rubrics__publication {
         width : 25%;
+    }
+
+    .rubrics__publication_x2 {
+        width : 50%;
     }
 }

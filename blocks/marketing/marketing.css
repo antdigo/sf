@@ -1,0 +1,109 @@
+.marketing {
+    display    : block;
+    padding    : 20px 0 30px;
+    text-align : left;
+    font-size  : 0;
+}
+
+.marketing__content {
+    box-sizing : border-box;
+}
+
+.marketing__title {
+    box-sizing  : border-box;
+    margin      : 10px 0 30px;
+    color       : #1d1d1b;
+    font-size   : 39px;
+    line-height : 1.2;
+}
+
+.marketing__description {
+    margin      : 0 0 15px;
+    color       : #fff;
+    font-size   : 12px;
+    line-height : 1.5;
+}
+
+.marketing__input,
+.marketing__text {
+    box-sizing         : border-box;
+    display            : block;
+    width              : 100%;
+    outline            : none;
+    border             : 1px solid #a9a9a9;
+    border-radius      : 0;
+    margin             : 20px 0;
+    padding            : 9px 17px 7px;
+    background         : #fff;
+    color              : #666;
+    font-size          : 14px;
+    line-height        : 1;
+    -webkit-appearance : none;
+    -moz-appearance    : none;
+    appearance         : none;
+}
+
+.marketing__text {
+    resize : none;
+    height : 100px;
+}
+
+.marketing__submit {
+    display            : block;
+    width              : 100%;
+    outline            : none;
+    border             : 0;
+    border-radius      : 5px;
+    margin             : 20px 0;
+    padding            : 10px 25px;
+    background         : #e84810;
+    color              : #fff;
+    font-size          : 14px;
+    line-height        : 1;
+    text-transform     : uppercase;
+    cursor             : pointer;
+    -webkit-appearance : none;
+    -moz-appearance    : none;
+    appearance         : none;
+}
+
+.marketing__submit:hover {
+    background : #6a6a6a;
+}
+
+@media (min-width : 768px) {
+    .marketing__description {
+        margin-bottom : 40px;
+    }
+
+    .marketing__column {
+        box-sizing     : border-box;
+        display        : inline-block;
+        vertical-align : bottom;
+        width          : 50%;
+    }
+
+    .marketing__column_1 {
+        padding-right : 20px;
+    }
+
+    .marketing__column_2 {
+        padding-left : 20px;
+    }
+}
+
+@media (min-width : 1200px) {
+    .marketing__title {
+        display        : inline-block;
+        vertical-align : middle;
+        width          : 50%;
+        padding-right  : 5%;
+    }
+
+    .marketing__content {
+        display        : inline-block;
+        vertical-align : middle;
+        width          : 50%;
+    }
+}
+
