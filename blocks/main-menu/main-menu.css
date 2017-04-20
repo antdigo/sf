@@ -29,6 +29,22 @@
     text-decoration : none;
 }
 
+.main-menu__item_has_children > .main-menu__link:after {
+    content        : "\e900";
+    display        : inline-block;
+    vertical-align : middle;
+    margin-left    : 8px;
+    position       : relative;
+    top            : -1px;
+    font-family    : 'sf';
+    font-size      : 6px;
+    transition     : all .2s;
+}
+
+.main-menu__item:hover .main-menu__link:after {
+    transform : scale(1, -1);
+}
+
 @media (max-width : 767px) {
     .main-menu {
         display : none;
@@ -115,6 +131,11 @@
     .main-menu__item_active,
     .main-menu__item:hover {
         color : #f05423;
+    }
+
+    .main-menu__item_active .main-menu__link:after,
+    .main-menu__item:hover .main-menu__link:after {
+        color : #ba3b0e;
     }
 
     .main-menu__item .main-menu__item_active,
