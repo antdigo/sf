@@ -53,6 +53,6 @@
     .promo_stack .promo__container {
         box-sizing : border-box;
         width      : 585px !important;
-        max-width  : none !important;
+        max-width  : 100% !important;
     }
 }

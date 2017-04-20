@@ -1,0 +1,35 @@
+.breadcrumb {
+    display   : block;
+    margin    : 0;
+    padding   : 0;
+    font-size : 0;
+}
+
+.breadcrumb__item {
+    display     : inline-block;
+    margin      : 0 30px 10px 0;
+    position    : relative;
+    font-size   : 14px;
+    line-height : 1.2;
+    color       : #c9c9c9;
+}
+
+.breadcrumb__item:after {
+    content     : "\e900";
+    margin-left : 8px;
+    position    : absolute;
+    top         : 4px;
+    right       : -20px;
+    font-family : 'sf';
+    font-size   : 7px;
+    transform   : rotate(-90deg);
+}
+
+.breadcrumb__item:last-child:after {
+    content : none;
+}
+
+.breadcrumb__link {
+    color           : #000;
+    text-decoration : none;
+}

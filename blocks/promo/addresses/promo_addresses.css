@@ -1,0 +1,108 @@
+.promo_addresses {
+    padding : 20px 0 1px;
+}
+
+.promo_addresses .promo__header {
+    margin      : 0 0 .5em;
+    color       : #1d1d1b;
+    font-size   : 26px;
+    line-height : 1.2;
+}
+
+.promo_addresses .promo__container {
+    padding : 0 20px;
+    margin  : 0 auto;
+}
+
+.promo_addresses .promo__address-link {
+    display       : inline-block;
+    margin        : 0 20px 10px 24px;
+    position      : relative;
+    font-size     : 18px;
+    line-height   : 1.2;
+    color         : #000;
+    border-bottom : 1px dashed;
+    cursor        : pointer;
+}
+
+.promo_addresses .promo__footer {
+    margin : 30px 0;
+}
+
+.promo_addresses .promo__social {
+    margin-bottom : 10px;
+}
+
+.promo_addresses .promo__social-link {
+    position        : relative;
+    top             : -3px;
+    font-size       : 14px;
+    line-height     : 1.2;
+    color           : inherit;
+    text-decoration : none;
+}
+
+.promo_addresses .promo__social .fa {
+    box-sizing    : border-box;
+    display       : inline-block;
+    height        : 40px;
+    width         : 40px;
+    margin-right  : 5px;
+    border        : 1px solid;
+    border-radius : 50%;
+    color         : #999;
+    font-size     : 24px;
+    line-height   : 38px;
+    text-align    : center;
+    cursor        : pointer;
+}
+
+.promo_addresses .promo__social:hover .fa {
+    color : #000;
+}
+
+.promo_addresses .promo__address-link:before {
+    content                 : "\f041";
+    display                 : inline-block;
+    vertical-align          : middle;
+    margin-right            : 10px;
+    position                : absolute;
+    top                     : -2px;
+    left                    : -24px;
+    font                    : normal normal normal 14px/1 FontAwesome;
+    font-size               : 24px;
+    text-rendering          : auto;
+    -webkit-font-smoothing  : antialiased;
+    -moz-osx-font-smoothing : grayscale;
+}
+
+.promo_addresses .promo__address-link_active,
+.promo_addresses .promo__address-link:hover {
+    color               : #e84810;
+    border-bottom-color : transparent;
+}
+
+.promo_addresses .promo__address {
+    display : none;
+}
+
+.promo_addresses .promo__address_active {
+    display : block;
+}
+
+@media (min-width : 768px) {
+    .promo_addresses .promo__header {
+        font-size   : 39px;
+        font-weight : 300;
+    }
+
+    .promo_addresses .promo__container {
+        padding : 0 0 0 30px;
+    }
+}
+
+@media (min-width : 1200px) {
+    .promo_addresses .promo__container {
+        padding : 0;
+    }
+}

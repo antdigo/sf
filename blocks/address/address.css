@@ -1,0 +1,28 @@
+.address {
+}
+
+.promo__address-links {
+    margin : 30px 0;
+}
+
+.address__location {
+    font-size   : 20px;
+    line-height : 1.5;
+    margin      : 5px 0;
+}
+
+.address__scheduler {
+    margin : 6px 0 12px;
+}
+
+.address__phone,
+.address__email {
+    display         : inline-block;
+    margin-bottom   : 10px;
+    border-bottom   : 1px dashed;
+    color           : inherit;
+    font-size       : 24px;
+    line-height     : 1.3;
+    text-decoration : none;
+    cursor          : pointer;
+}
