@@ -83,12 +83,12 @@
     box-sizing     : border-box;
     display        : inline-block;
     vertical-align : middle;
+    margin         : 0 0 10px;
     text-justify   : auto;
 }
 
 .vacancies__item-more {
     border-bottom  : 1px dashed;
-    margin         : 0;
     color          : #000;
     font-size      : 14px;
     line-height    : 1.3;
@@ -98,7 +98,7 @@
 }
 
 .vacancies__item-location {
-    margin      : 0 0 0 15px;
+    margin-left : 15px;
     position    : relative;
     color       : #7a7a7a;
     font-size   : 14px;
@@ -135,6 +135,18 @@
 
 .vacancies__item:hover .vacancies__item-more {
     border-bottom-color : transparent;
+}
+
+@media (max-width : 480px) {
+    .vacancies__item {
+        padding : 15px 15px 85px;
+    }
+
+    .vacancies__item-footer {
+        bottom : 15px;
+        left   : 15px;
+        right  : 15px;
+    }
 }
 
 @media (max-width : 767px) {
