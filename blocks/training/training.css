@@ -1,0 +1,303 @@
+.training {
+    display   : block;
+    max-width : 1170px;
+    margin    : 0 auto;
+    font-size : 0;
+}
+
+.training__schedule {
+    display   : block;
+    margin    : 0 -15px 20px;
+    font-size : 0;
+}
+
+.training__list {
+    box-sizing     : border-box;
+    display        : inline-block;
+    vertical-align : top;
+    padding        : 0 15px;
+    margin         : 0 0 30px;
+    width          : 100%;
+}
+
+.training__list-header {
+    margin          : 0 0 20px;
+    color           : #000;
+    font-size       : 26px;
+    line-height     : 1.2;
+    font-weight     : 600;
+    text-decoration : none;
+}
+
+.training__list-title {
+    display       : inline;
+    border-bottom : 1px solid;
+}
+
+.training__list-items,
+.training__list-item {
+    display : block;
+    margin  : 0;
+    padding : 0;
+}
+
+.training__list-item {
+    margin-bottom : 15px;
+    padding-left  : 30px;
+    position      : relative;
+}
+
+.training__list-item:before {
+    content                 : "\f0c1";
+    display                 : inline-block;
+    position                : absolute;
+    top                     : 1px;
+    left                    : 0;
+    color                   : #333;
+    font                    : normal normal normal 18px/1 FontAwesome;
+    text-rendering          : auto;
+    -webkit-font-smoothing  : antialiased;
+    -moz-osx-font-smoothing : grayscale;
+}
+
+.training__list-item_video:before {
+    content : "\f16a";
+    color   : #f02026;
+}
+
+.training__list-item_doc:before {
+    content : "\f15c";
+    color   : #0d7aca;
+}
+
+.training__list-item_spread:before {
+    content : "\f0ce";
+    color   : #00ab62;
+}
+
+.training__list-item-title,
+.training__list-item-author {
+    display         : inline;
+    color           : #000;
+    font-size       : 16px;
+    line-height     : 1.2;
+    font-weight     : 400;
+    text-decoration : none;
+    cursor          : pointer;
+}
+
+.training__list-item-title:hover,
+.training__list-item-author:hover {
+    text-decoration : underline;
+}
+
+.training__list-item-author {
+    color : #9f9f9f;
+}
+
+.training__library-header {
+    margin          : 0 0 40px;
+    color           : #000;
+    font-size       : 26px;
+    line-height     : 1.2;
+    font-weight     : 600;
+    text-decoration : none;
+}
+
+.training__library-title {
+    display       : inline;
+    border-bottom : 1px solid;
+}
+
+.training__library-content {
+    display   : block;
+    margin    : 0 -20px;
+    font-size : 0;
+}
+
+.training__library-promo,
+.training__library-review,
+.training__library-mini {
+    box-sizing     : border-box;
+    display        : inline-block;
+    vertical-align : top;
+    position       : relative;
+    width          : 100%;
+    margin         : 0 0 25px;
+    padding        : 0 20px;
+}
+
+.training__library-review-title {
+    display     : block;
+    margin      : 0 0 1em;
+    font-size   : 26px;
+    line-height : 1.3;
+    font-weight : 400;
+}
+
+.training__library-review-content {
+    display     : block;
+    margin      : 0;
+    font-size   : 14px;
+    line-height : 1.4;
+    font-weight : 400;
+}
+
+.training__library-review-content p {
+    margin : 0 0 .25em;
+}
+
+.training__library-mini {
+    margin    : 0 -15px;
+    font-size : 0;
+}
+
+.training__library-mini-education {
+    box-sizing     : border-box;
+    display        : inline-block;
+    vertical-align : top;
+    margin         : 0 0 25px;
+    padding        : 0 15px;
+    width          : 50%;
+}
+
+.training__row_more {
+    margin     : 0 0 50px;
+    text-align : center;
+}
+
+.training__library-review-more {
+    display       : inline;
+    border-bottom : 1px solid;
+    margin        : 0 10px;
+    color         : #000;
+    font-size     : 18px;
+    line-height   : 1.2;
+    font-weight   : 400;
+    cursor        : pointer;
+}
+
+.training__row_social {
+    display   : block;
+    margin    : 30px -20px;
+    font-size : 0;
+}
+
+.training__social {
+    box-sizing      : border-box;
+    display         : inline-block;
+    vertical-align  : top;
+    height          : 84px;
+    width           : 100%;
+    margin          : 0 0 20px;
+    padding         : 20px;
+    position        : relative;
+    color           : #fff;
+    font-size       : 18px;
+    line-height     : 1.2;
+    text-decoration : none;
+}
+
+.training__social:before {
+    display                 : inline-block;
+    vertical-align          : middle;
+    width                   : 1.28571429em;
+    margin                  : 0 15px 0 0;
+    position                : relative;
+    top                     : -3px;
+    font                    : normal normal normal 40px/1 FontAwesome;
+    text-align              : center;
+    text-rendering          : auto;
+    -webkit-font-smoothing  : antialiased;
+    -moz-osx-font-smoothing : grayscale;
+}
+
+.training__social:after {
+    content       : "Подписаться";
+    display       : inline-block;
+    border-radius : 3px;
+    margin        : 0;
+    padding       : 15px 30px;
+    position      : absolute;
+    right         : 20px;
+    top           : 20px;
+    background    : #fff;
+    color         : #000;
+    font-size     : 14px;
+    line-height   : 1;
+}
+
+.training__social_fb {
+    background : #597cbe;
+}
+
+.training__social_fb:before {
+    content : "\f09a";
+    color   : #024689;
+}
+
+.training__social_vk {
+    background : #4c79a7;
+}
+
+.training__social_vk:before {
+    content : "\f189";
+    color   : #00497b;
+}
+
+@media (max-width : 767px) {
+    .training {
+        padding : 0 20px;
+    }
+
+    .training__social {
+        font-size  : 0;
+        text-align : center;
+    }
+
+    .training__social:after {
+        position : static;
+    }
+}
+
+@media (min-width : 768px) and (max-width : 1199px) {
+    .training {
+        padding : 0 30px;
+    }
+
+    .training__library-promo,
+    .training__library-review {
+        width : 50%;
+    }
+
+    .training__library-mini {
+        width : 100%;
+    }
+
+    .training__library-mini-education {
+        width : 25%
+    }
+}
+
+@media (min-width : 991px) {
+    .training__list {
+        width : 50%;
+    }
+
+    .training__library-promo,
+    .training__library-review,
+    .training__library-mini {
+        width : 33.333333%;
+    }
+
+    .training__library-mini-education {
+        width : 50%;
+    }
+
+    .training__social {
+        width        : calc(50% - 40px);
+        margin-left  : 20px;
+        margin-right : 20px;
+    }
+}
+
