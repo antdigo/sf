@@ -107,14 +107,16 @@
 }
 
 .rubrics__row_publication,
-.rubrics__row_education {
+.rubrics__row_education,
+.rubrics__row_news {
     display   : block;
     margin    : 0 -15px;
     font-size : 0;
 }
 
 .rubrics__publication,
-.rubrics__education {
+.rubrics__education,
+.rubrics__news {
     box-sizing     : border-box;
     display        : inline-block;
     vertical-align : top;
@@ -134,6 +136,12 @@
 
     .rubrics__items {
         margin-top : 0;
+    }
+}
+
+@media (min-width : 768px) {
+    .rubrics__news {
+        width : 50%;
     }
 }
 
@@ -160,7 +168,7 @@
     }
 
     .rubrics__education {
-        width: 33.333333%;
+        width : 33.333333%;
     }
 
     .rubrics__publication_x2 {
