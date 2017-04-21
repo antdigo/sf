@@ -32,6 +32,16 @@
     cursor         : pointer;
 }
 
+.rubrics__item:after {
+    content     : attr(data-counter);
+    display     : inline-block;
+    margin-left : .5em;
+    position    : relative;
+    top         : -1em;
+    font-size   : 13px;
+    line-height : 1;
+}
+
 .rubrics__item_active,
 .rubrics__item:hover {
     color : #e84810;
@@ -96,13 +106,15 @@
     font-size      : 10px;
 }
 
-.rubrics__row_publication {
+.rubrics__row_publication,
+.rubrics__row_education {
     display   : block;
     margin    : 0 -15px;
     font-size : 0;
 }
 
-.rubrics__publication {
+.rubrics__publication,
+.rubrics__education {
     box-sizing     : border-box;
     display        : inline-block;
     vertical-align : top;
@@ -126,7 +138,8 @@
 }
 
 @media (min-width : 480px) and (max-width : 991px) {
-    .rubrics__publication {
+    .rubrics__publication,
+    .rubrics__education {
         width : 50%;
     }
 
@@ -144,6 +157,10 @@
 @media (min-width : 992px) {
     .rubrics__publication {
         width : 25%;
+    }
+
+    .rubrics__education {
+        width: 33.333333%;
     }
 
     .rubrics__publication_x2 {
