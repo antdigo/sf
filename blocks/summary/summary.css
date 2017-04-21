@@ -1,0 +1,112 @@
+.summary {
+    background     : #f5f5f6;
+    padding-top    : 30px;
+    padding-bottom : 30px;
+}
+
+.summary__container {
+    display   : block;
+    max-width : 1170px;
+    margin    : 0 auto;
+}
+
+.summary__control {
+    margin   : 0 0 10px;
+    position : relative;
+}
+
+.summary__file {
+    box-sizing         : border-box;
+    display            : inline-block;
+    outline            : none;
+    border             : none;
+    border-radius      : 3px;
+    margin             : 20px 0 0;
+    padding            : 15px 20px;
+    position           : absolute;
+    bottom             : 20px;
+    right              : 25px;
+    background         : #6a6a6a;
+    color              : #fff;
+    font-size          : 16px;
+    line-height        : 1;
+    font-weight        : 400;
+    cursor             : pointer;
+    -webkit-appearance : none;
+    -moz-appearance    : none;
+    appearance         : none;
+}
+
+.summary__file input {
+    display : none;
+}
+
+.summary__text {
+    box-sizing         : border-box;
+    display            : block;
+    height             : 136px;
+    width              : 100%;
+    border             : 1px solid #cecece;
+    border-radius      : 0;
+    background         : #fff;
+    color              : #394149;
+    font-size          : 16px;
+    line-height        : 1;
+    padding            : 12px 15px 14px;
+    -webkit-appearance : none;
+    -moz-appearance    : none;
+    appearance         : none;
+    resize             : none;
+}
+
+.summary__submit {
+    box-sizing         : border-box;
+    display            : inline-block;
+    width              : 100%;
+    max-width          : 350px;
+    outline            : none;
+    border             : none;
+    border-radius      : 3px;
+    margin             : 20px 0 0;
+    padding            : 18px 10px;
+    background         : #e84810;
+    color              : #fff;
+    font-size          : 17px;
+    line-height        : 1;
+    font-weight        : 700;
+    text-transform     : uppercase;
+    cursor             : pointer;
+    -webkit-appearance : none;
+    -moz-appearance    : none;
+    appearance         : none;
+}
+
+.summary__submit:hover {
+    background : #6a6a6a;
+}
+
+.summary__file:hover {
+    background : #e84810
+}
+
+@media (max-width : 479px) {
+    .summary__file {
+        width      : 100%;
+        max-width  : 350px;
+        margin     : 20px 0 0;
+        position   : static;
+        text-align : center;
+    }
+}
+
+@media (max-width : 767px) {
+    .summary__container {
+        padding : 0 20px;
+    }
+}
+
+@media (min-width : 768px) and (max-width : 1199px) {
+    .summary__container {
+        padding : 0 30px;
+    }
+}
