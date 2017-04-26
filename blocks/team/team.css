@@ -1,0 +1,263 @@
+.team,
+.team__section {
+    display : block;
+    margin  : 0;
+    padding : 0;
+}
+
+.team__section_leader,
+.team__section_members,
+.team__section_life {
+    box-sizing  : border-box;
+    max-width   : 1210px;
+    margin      : 40px auto;
+    padding     : 0 20px;
+    font-size   : 0;
+    line-height : 1;
+}
+
+.team__section_leader {
+    font-size : 0;
+}
+
+.team__section_leader-about {
+    width : calc(100% - 376px - 40px);
+}
+
+.team__section_life {
+    overflow : hidden;
+}
+
+.team__section_life-title {
+    display      : block;
+    text-align   : justify;
+    text-justify : distribute-all-lines;
+}
+
+.team__section_life-title:after {
+    content : '';
+    display : inline-block;
+    width   : 100%;
+}
+
+.team__section_leader-about,
+.team__leader-avatar {
+    display        : inline-block;
+    vertical-align : top;
+}
+
+.team__leader-avatar {
+    border-radius : 50%;
+    width         : 376px;
+    height        : 376px;
+    margin        : 0 40px 0 0;
+    background    : none 50% 50%/cover no-repeat #959595;
+}
+
+.team__leader-name {
+    margin      : 0 0 30px;
+    font-size   : 26px;
+    line-height : 1.2;
+    font-weight : 600;
+}
+
+.team__leader-description {
+    font-size   : 16px;
+    line-height : 1.5;
+    font-weight : 400;
+}
+
+.team__leader-description p {
+    margin : 0 0 10px;
+}
+
+.team__members-title {
+    margin      : 0 0 30px;
+    font-size   : 26px;
+    line-height : 1.2;
+    font-weight : 600;
+}
+
+.team__member {
+    display  : inline-block;
+    position : relative;
+}
+
+.team__member_active .team__member-name,
+.team__member:hover .team__member-name {
+    border-bottom-color : transparent;
+}
+
+.team__member_active .team__member-about,
+.team__member:hover .team__member-about {
+    display : block;
+}
+
+.team__member-name {
+    display       : inline-block;
+    margin        : 0 0 30px;
+    font-size     : 16px;
+    line-height   : 1.2;
+    font-weight   : 400;
+    border-bottom : 1px dashed;
+    cursor        : pointer;
+}
+
+.team__member-about {
+    display    : none;
+    width      : 530px;
+    padding    : 30px 0;
+    position   : absolute;
+    z-index    : 1;
+    left       : 200px;
+    top        : -30px;
+    background : #eee;
+}
+
+.team__member-about:before {
+    content      : "";
+    display      : block;
+    width        : 0;
+    height       : 0;
+    border-style : solid;
+    border-width : 10px 11px 10px 0;
+    border-color : transparent #eee transparent transparent;
+    position     : absolute;
+    left         : -11px;
+    top          : 30px;
+}
+
+.team__member-position,
+.team__member-description,
+.team__member-hobby {
+    padding-left  : 40px;
+    padding-right : 40px;
+}
+
+.team__member-position {
+    margin      : 0 0 20px;
+    font-size   : 20px;
+    line-height : 1.2;
+    font-weight : 400;
+}
+
+.team__member-description {
+    font-size   : 14px;
+    line-height : 1.5;
+    font-weight : 400;
+}
+
+.team__member-hobby {
+    border-top  : 1px solid #e3e3e3;
+    margin-top  : 30px;
+    padding-top : 30px;
+    font-size   : 14px;
+    line-height : 1.5;
+    font-weight : 400;
+}
+
+.team__member-hobby:before {
+    content        : "";
+    display        : inline-block;
+    vertical-align : middle;
+    width          : 29px;
+    height         : 29px;
+    margin-right   : 20px;
+    background     : url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAQAAAD8mq+EAAACeElEQVQ4EY3BUWiUBQAA4O+aMWTjVlCBaL+HDzHag8RBvl8ERRxXDsMeQpDgetxVDz6IDcMjYkj3VC9BcUIrkxHRk9BuoQWSxO6KoNpmrbSRTezGzf3d9ifT87/fTfH72Fwgr2hEUV7gHu0y4YJIU8M5DU2RCybscldpFaEV//nMbjcMGbciFKpIu4OsOTMKtnjBpMiUt02KTBl2v4IZc7I2kdNS1adjSFVk3G4dfapacm7zlLbjUrplRDK6pYxpe1qXtHmR7ZIyIhlJj4j8Ie2WilmRrKSMSEbS4yJzKm4KhAqWPCtpr8h+STmhglBgXVldyi8OiPU4rO1nbUf1iO33p5S6snWzSvjOUR3bTbpiHwr+cUag45BplMy6LhAZlLEs9K4dyLvsGzvdsMPXrtiLfm+65prHDIoE5DU96Cen7fO90LS2Y7aI9Thi1ZQFv3vFl371sKY8RT+oaRhAyvNWvGWjI1a9YSv6nHfWj4qUXHbRozo+cspGJ4zr2OY3i0q8Y9UTYnnLtkrqddWLYkNWHSdvSbdeTcOSnrOsX7cleQKRQd3GfSzpAxO6DYoErptV0m3YVb1iPRa9rFvJrHVldSmxfis+NWrUqFGjTmgbEEupK1sXCB0UG7aqrqampqZm2pqXxA4KBW76XGTBKa/ZI2fZIUkjQs94UslJf4l84Za0eWe8p27Nmk9s9KE1axred9a8tC5ZLWNSBpx23n2SUr71lQekjGnJuk1OS1Wfbf71qqQDWnbqU9WSs4msOTMKXrfoIbEBCw4rmDEn6w7SKkINl5wUq/pbQ6gi7a4CZRdFmhrOaWiKXFIWuEeBvKIRRXmBTf0PRCXjSoBiK+8AAAAASUVORK5CYII=') 0 0 no-repeat;
+}
+
+.team__life-title,
+.team__life-prevnext-button {
+    display        : inline-block;
+    vertical-align : middle;
+    margin-bottom  : 30px;
+    text-justify   : none;
+}
+
+.team__life-title {
+    color       : #000;
+    font-size   : 39px;
+    line-height : 1.2;
+    font-weight : 300;
+}
+
+.team__life-carousel {
+    margin : 0 -15px;
+}
+
+.team__life-carousel .slick-slide {
+    outline : 0;
+}
+
+.team__life-item {
+    box-sizing : border-box;
+    display    : block;
+    padding    : 0 15px;
+    margin     : 0 0 30px;
+}
+
+.team__life-image {
+    display    : block;
+    height     : 0;
+    padding    : 50% 0;
+    background : none 50% 50%/cover no-repeat;
+}
+
+.team__life-prevnext-button {
+    font-size   : 0;
+    line-height : 1;
+}
+
+.team__life-prev-button,
+.team__life-next-button {
+    width          : 21px;
+    height         : 21px;
+    display        : inline-block;
+    vertical-align : top;
+    text-align     : center;
+}
+
+.team__life-prev-button.slick-disabled,
+.team__life-next-button.slick-disabled {
+    opacity : 0.15;
+}
+
+.team__life-prev-button:before,
+.team__life-next-button:before {
+    content     : "\e900";
+    display     : inline-block;
+    margin      : 10px 0;
+    font-family : 'sf';
+    font-size   : 12px;
+    cursor      : pointer;
+}
+
+.team__life-prev-button {
+    transform : rotate(90deg);
+}
+
+.team__life-next-button {
+    transform : rotate(90deg) scale(1, -1);
+}
+
+@media (max-width : 1210px) {
+    .team__leader-avatar {
+        width  : 200px;
+        height : 200px;
+    }
+
+    .team__section_leader-about {
+        width : calc(100% - 200px - 40px);
+    }
+}
+
+@media (max-width : 767px) {
+    .team__leader-avatar {
+        display : block;
+        margin  : 0 auto 30px;
+    }
+
+    .team__section_leader-about {
+        width : 100%;
+    }
+}
