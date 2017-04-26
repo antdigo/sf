@@ -1,0 +1,170 @@
+.post-comments,
+.post-comments__section {
+    display : block;
+    margin  : 0;
+    padding : 0;
+}
+
+.post-comments__section_header,
+.post-comments__section_new-comment,
+.post-comments__section_comments {
+    box-sizing  : border-box;
+    max-width   : 1210px;
+    margin      : 40px auto;
+    padding     : 0 20px;
+    font-size   : 0;
+    line-height : 1;
+}
+
+.post-comments__section_providers {
+    overflow       : hidden;
+    display        : inline-block;
+    vertical-align : middle;
+    font-size      : 0;
+}
+
+.post-comments__section_login {
+    font-size     : 0;
+    margin-bottom : 20px;
+}
+
+.post-comments__section_providers:before {
+    content     : "Войти через:";
+    display     : block;
+    margin      : 0 0 10px;
+    color       : #000;
+    font-size   : 14px;
+    line-height : 1.5;
+    font-weight : 400;
+}
+
+.post-comments__title {
+    display        : inline-block;
+    vertical-align : bottom;
+    margin         : 0 40px 10px 0;
+    color          : #000;
+    font-size      : 26px;
+    line-height    : 1.2;
+    font-weight    : 400;
+    text-transform : uppercase;
+}
+
+.post-comments__order-by {
+    display        : inline-block;
+    vertical-align : bottom;
+    border-bottom  : 1px dashed;
+    margin         : 0 30px 10px 0;
+    color          : #000;
+    font-size      : 20px;
+    line-height    : 1.2;
+    font-weight    : 400;
+    cursor         : pointer;
+}
+
+.post-comments__order-by_active,
+.post-comments__order-by:hover {
+    color               : #e84810;
+    border-bottom-color : rgba(0, 0, 0, 0);
+}
+
+.post-comments__user-avatar {
+    display        : inline-block;
+    vertical-align : middle;
+    border-radius  : 50%;
+    width          : 76px;
+    height         : 76px;
+    margin         : 0 10px 10px 0;
+    background     : url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAABMCAQAAABtnpmgAAACzElEQVRo3u3YX4gVVRzA8WO5SYEamrimJQaCGUK0C7ayFYkFkVIPgSJrhSj450GlRXvI2BBWfbDUwNWSoM3oxV5kobxKtBhmJQkRuaYuKfpgyrq3iEzQjw9N697Vdhfv3BmR852Xe37zmx/fe+bcOb+5IUQikUgkEolEIpVBnRVaFXxln10aPXU7SE3R4h+lXNGqJl+tlYnKAc2WWWypJp87B97OT2sdWGd8SXS0l+0GLflozcYxT/SKDDNXe8lNXZC91hBnsaEk9jDo9IVDzoMu92Yt9lIyJ4csMq4n+g7aQgjBGC/4Ca9lLfYJWvwArvreDutt9x1oSHJexJ6sxX4jhBDMSxb6f3R408Qkpxrd2Wrdgz96Rveb7lXLLPC4ISV5RYzKUmwkTgwi7zgeuR3FjmUtNnRwq8cFPJDtKjuDEYOY10vuylasDdMHyHkSB7N+XKxG4wA5jWjOWmwqfhkg5+eBZ7USakfpr+tSg1Mhe7yC9n7Of42FIQ90XN8Xbzg3H6dDPqgF025y5jFXyLH3txp/mtEnWqeIppAnNv7b3xubjMd6C2wOedPzQlKwy97kc2PuWiGEYIoPXUyULtppah4Sz1iuwQzVN/kpzFR7Q/QhT1tijecqKTXCnpJeteA9S8xWc73rD8GDas2x1Fb7/dorv83wSom1o8Nam3zp9z5v30WdOnTq7hO/oGCrtQ5jX2W0nsVJVcmoykR1XtfsY98400vlrINabbRIvUmG9Vx/pEI7pw/wRj+3udoE44ws7fp7ZTRgS/pad+sur002Gl3pi83Cj2XWKNB3lyhfbCdWlVmjAe+nq1WlG5PKrDIKXf+3Bm+t5PM4nEKdvahPU+wjrEyhznxsS1Os6HLp33O3WOc+fyumKcZfqX1FaYqdwKcWl318hm/TFKt3STqc82i6D4zJmrxb5rHJGmNCJBKJRCKRSCRyR3INC1BhhCPJGYAAAAAASUVORK5CYII=') 50% 50%/cover no-repeat #959595;
+}
+
+.post-comments__user-providers {
+    margin : 0 -5px;
+}
+
+.post-comments__user-provider {
+    display        : inline-block;
+    vertical-align : middle;
+    margin         : 0 0 10px;
+    padding        : 0 5px;
+    color          : #999;
+    text-align     : center;
+    cursor         : pointer;
+}
+
+.post-comments__user-provider:hover {
+    color : #000;
+}
+
+.post-comments__user-provider:before {
+    box-sizing              : border-box;
+    display                 : inline-block;
+    vertical-align          : middle;
+    width                   : 40px;
+    height                  : 40px;
+    border                  : 1px solid;
+    border-radius           : 50%;
+    position                : relative;
+    font                    : normal normal normal 26px/40px FontAwesome;
+    text-rendering          : auto;
+    -webkit-font-smoothing  : antialiased;
+    -moz-osx-font-smoothing : grayscale;
+}
+
+.post-comments__user-provider_fb:before {
+    content : "\f09a";
+}
+
+.post-comments__user-provider_vk:before {
+    content : "\f189";
+}
+
+.post-comments__user-provider_tw:before {
+    content : "\f099";
+}
+
+.post-comments__user-provider_yt:before {
+    content : "\f167";
+}
+
+.post-comments__message {
+    box-sizing         : border-box;
+    display            : block;
+    width              : 100%;
+    height             : 207px;
+    border             : 1px solid #bcbcbc;
+    border-radius      : 2px;
+    padding            : 20px;
+    background         : #fff;
+    color              : #394149;
+    font-size          : 14px;
+    line-height        : 1.2;
+    -webkit-appearance : none;
+    -moz-appearance    : none;
+    appearance         : none;
+    resize             : none;
+}
+
+@media (min-width : 768px) {
+    .post-comments__section_login,
+    .post-comments__section_form {
+        display        : inline-block;
+        vertical-align : top;
+    }
+
+    .post-comments__section_login {
+        max-width     : 105px;
+        margin-right  : 20px;
+        margin-bottom : 0;
+    }
+
+    .post-comments__section_form {
+        width : calc(100% - 125px);
+    }
+}
+
+@media (min-width : 1024px) {
+    .post-comments__section_title,
+    .post-comments__section_order-by {
+        display : inline-block;
+    }
+}

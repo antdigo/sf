@@ -1,0 +1,305 @@
+.promo-post,
+.promo-post__content,
+.promo-post__section {
+    display : block;
+    margin  : 0;
+    padding : 0;
+}
+
+.promo-post {
+    background : none 50% 50%/cover no-repeat;
+}
+
+.promo-post__content {
+    box-sizing   : border-box;
+    max-width    : 1000px;
+    margin-left  : auto;
+    margin-right : auto;
+    padding      : 30px 20px;
+    position     : relative;
+}
+
+.promo-post__section_clip {
+    overflow : hidden;
+}
+
+.promo-post__section_rating {
+
+}
+
+.promo-post__section_header {
+    margin-top    : 100px;
+    margin-bottom : 100px;
+}
+
+.promo-post__section_type {
+    font-size     : 0;
+    margin-bottom : 20px;
+}
+
+.promo-post__section_title {
+    margin-bottom : 40px;
+}
+
+.promo-post__section_footer {
+    font-size    : 0;
+    margin-left  : -50px;
+    margin-right : -50px;
+}
+
+.promo-post__section_subscription {
+    width  : 280px;
+    margin : 0;
+}
+
+.promo-post__section_author,
+.promo-post__section_stats,
+.promo-post__section_date {
+    box-sizing     : border-box;
+    display        : inline-block;
+    vertical-align : middle;
+    margin-bottom  : 30px;
+    padding-left   : 50px;
+    padding-right  : 50px;
+    white-space    : nowrap;
+}
+
+.promo-post__section_date {
+    color       : #fff;
+    line-height : 1;
+}
+
+.promo-post__rating {
+    font-size   : 26px;
+    line-height : 1;
+    color       : #fff;
+}
+
+.promo-post__rating:before {
+    content                 : "\f006";
+    display                 : inline-block;
+    vertical-align          : middle;
+    margin-right            : 10px;
+    font                    : normal normal normal 14px/1 FontAwesome;
+    font-size               : inherit;
+    text-rendering          : auto;
+    -webkit-font-smoothing  : antialiased;
+    -moz-osx-font-smoothing : grayscale;
+}
+
+.promo-post__rating:after {
+    content        : attr(data-value);
+    display        : inline-block;
+    vertical-align : middle;
+}
+
+.promo-post__type {
+    display     : inline-block;
+    padding     : 5px 15px 6px;
+    margin      : 0 15px 10px 0;
+    background  : #e84810;
+    color       : #fff;
+    font-size   : 14px;
+    line-height : 1;
+    white-space : nowrap;
+}
+
+.promo-post__title {
+    display         : inline;
+    color           : #fff;
+    font-size       : 32px;
+    line-height     : 36px;
+    font-weight     : 700;
+    text-decoration : none;
+}
+
+.promo-post__author {
+    display         : inline;
+    color           : #fff;
+    font-size       : 0;
+    line-height     : 1.4;
+    text-decoration : none;
+}
+
+.promo-post__author-avatar,
+.promo-post__section_author-name {
+    display        : inline-block;
+    vertical-align : middle;
+}
+
+.promo-post__author-avatar {
+    border-radius : 50%;
+    width         : 40px;
+    height        : 40px;
+    margin-right  : 15px;
+    background    : none 50% 50%/cover no-repeat;
+}
+
+.promo-post__section_author-name {
+    max-width : calc(100% - 55px);
+}
+
+.promo-post__author-name {
+    border-bottom : 1px solid;
+    font-size     : 18px;
+    white-space   : normal;
+    transition    : color 0.15s linear 0s;
+}
+
+.promo-post__author:hover .promo-post__author-name {
+    color : #e84810;
+}
+
+.promo-post__stat {
+    display      : inline-block;
+    margin-right : 15px;
+    color        : #fff;
+    font-size    : 14px;
+    line-height  : 1.2;
+    transition   : color 0.15s linear 0s;
+}
+
+.promo-post__stat:before {
+    display                 : inline-block;
+    vertical-align          : middle;
+    margin-right            : 5px;
+    font                    : normal normal normal 14px/1 FontAwesome;
+    font-size               : inherit;
+    text-rendering          : auto;
+    -webkit-font-smoothing  : antialiased;
+    -moz-osx-font-smoothing : grayscale;
+}
+
+.promo-post__stat:after {
+    content        : attr(data-value);
+    display        : inline-block;
+    vertical-align : middle;
+    border-bottom  : 1px solid transparent;
+}
+
+a.promo-post__stat:after {
+    cursor        : pointer;
+    border-bottom : 1px solid;
+}
+
+a.promo-post__stat:hover {
+    color : #e84810;
+}
+
+.promo-post__stat_likes:before {
+    content : "\f08a";
+}
+
+.promo-post__stat_comments:before {
+    content   : "\f0e5";
+    transform : scale(-1, 1);
+}
+
+.promo-post__stat_views:before {
+    content : "\f06e";
+}
+
+.promo-post__date {
+    display   : inline;
+    font-size : 16px;
+}
+
+.promo-post_subscription .promo-post__content {
+    max-width : 1210px;
+}
+
+.promo-post_subscription .promo-post__section_author {
+    display       : block;
+    padding-left  : 0;
+    padding-right : 0;
+}
+
+.promo-post_subscription .promo-post__section_author-name {
+    max-width : none;
+}
+
+.promo-post_subscription .promo-post__section_stats,
+.promo-post_subscription .promo-post__section_date {
+    display       : block;
+    margin-bottom : 15px;
+}
+
+.promo-post_subscription .promo-post__date {
+    font-size : 14px;
+}
+
+@media (max-width : 767px) {
+    .promo-post__section_rating {
+        display : none;
+    }
+
+    .promo-post__section_header {
+        margin-top    : 10px;
+        margin-bottom : 30px;
+    }
+
+    .promo-post__title {
+        font-size   : 21px;
+        line-height : 26px;
+        font-weight : 400;
+    }
+
+    .promo-post__author-name {
+        font-size : 14px;
+    }
+
+    .promo-post__section_stats,
+    .promo-post__section_date {
+        margin-bottom : 15px;
+    }
+}
+
+@media (min-width : 768px) {
+    .promo-post .promo-post__content {
+        padding-top : 50px;
+    }
+}
+
+@media (min-width : 768px) and (max-width : 1209px) {
+    .promo-post__author-name {
+        font-size : 16px;
+    }
+
+    .promo-post__title {
+        font-size   : 26px;
+        line-height : 32px;
+    }
+}
+
+@media (max-width : 1023px) {
+    .promo-post_subscription {
+        border-bottom : 200px solid #fbfbfb;
+    }
+
+    .promo-post_subscription .promo-post__content {
+        padding-bottom : 80px;
+    }
+
+    .promo-post__section_subscription {
+        margin   : -280px auto 0;
+        position : relative;
+        top      : 280px;
+    }
+}
+
+@media (min-width : 1024px) {
+    .promo-post_subscription .promo-post__content {
+        padding-right : 360px;
+    }
+
+    .promo-post__section_subscription {
+        position  : absolute;
+        top       : 50%;
+        right     : 20px;
+        transform : translateY(-50%);
+    }
+}
+
+
+
+

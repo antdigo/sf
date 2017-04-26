@@ -132,6 +132,11 @@
     .rubrics__items {
         margin-bottom : 0;
     }
+
+    .rubrics__hashtag {
+        font-size   : 24px;
+        font-weight : 400;
+    }
 }
 
 @media (max-width : 767px) {

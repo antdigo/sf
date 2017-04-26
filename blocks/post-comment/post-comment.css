@@ -1,0 +1,122 @@
+.post-comment,
+.post-comment__section {
+    display : block;
+    margin  : 0;
+    padding : 0;
+}
+
+.post-comment {
+    min-height : 76px;
+    margin     : 20px 0;
+}
+
+.post-comment__section_header {
+    margin-bottom : 15px;
+    padding-left  : 105px;
+    padding-top   : 27px;
+    position      : relative;
+    font-size     : 0;
+}
+
+.post-comment__section_content {
+    padding-left : 105px;
+}
+
+.post-comment__section_message + .post-comment__section_answer {
+    margin-top : 40px;
+}
+
+.post-comment__avatar {
+    display       : block;
+    border-radius : 50%;
+    width         : 76px;
+    height        : 76px;
+    margin        : 0 auto;
+    position      : absolute;
+    top           : 0;
+    left          : 0;
+    background    : url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAABMCAQAAABtnpmgAAACzElEQVRo3u3YX4gVVRzA8WO5SYEamrimJQaCGUK0C7ayFYkFkVIPgSJrhSj450GlRXvI2BBWfbDUwNWSoM3oxV5kobxKtBhmJQkRuaYuKfpgyrq3iEzQjw9N697Vdhfv3BmR852Xe37zmx/fe+bcOb+5IUQikUgkEolEIpVBnRVaFXxln10aPXU7SE3R4h+lXNGqJl+tlYnKAc2WWWypJp87B97OT2sdWGd8SXS0l+0GLflozcYxT/SKDDNXe8lNXZC91hBnsaEk9jDo9IVDzoMu92Yt9lIyJ4csMq4n+g7aQgjBGC/4Ca9lLfYJWvwArvreDutt9x1oSHJexJ6sxX4jhBDMSxb6f3R408Qkpxrd2Wrdgz96Rveb7lXLLPC4ISV5RYzKUmwkTgwi7zgeuR3FjmUtNnRwq8cFPJDtKjuDEYOY10vuylasDdMHyHkSB7N+XKxG4wA5jWjOWmwqfhkg5+eBZ7USakfpr+tSg1Mhe7yC9n7Of42FIQ90XN8Xbzg3H6dDPqgF025y5jFXyLH3txp/mtEnWqeIppAnNv7b3xubjMd6C2wOedPzQlKwy97kc2PuWiGEYIoPXUyULtppah4Sz1iuwQzVN/kpzFR7Q/QhT1tijecqKTXCnpJeteA9S8xWc73rD8GDas2x1Fb7/dorv83wSom1o8Nam3zp9z5v30WdOnTq7hO/oGCrtQ5jX2W0nsVJVcmoykR1XtfsY98400vlrINabbRIvUmG9Vx/pEI7pw/wRj+3udoE44ws7fp7ZTRgS/pad+sur002Gl3pi83Cj2XWKNB3lyhfbCdWlVmjAe+nq1WlG5PKrDIKXf+3Bm+t5PM4nEKdvahPU+wjrEyhznxsS1Os6HLp33O3WOc+fyumKcZfqX1FaYqdwKcWl318hm/TFKt3STqc82i6D4zJmrxb5rHJGmNCJBKJRCKRSCRyR3INC1BhhCPJGYAAAAAASUVORK5CYII=') 50% 50%/cover no-repeat #959595;
+}
+
+.post-comment__user,
+.post-comment__date,
+.post-comment__reply-to {
+    display        : inline-block;
+    vertical-align : middle;
+    margin         : 0 10px 10px 0;
+}
+
+.post-comment__user {
+    color           : #000;
+    font-size       : 18px;
+    line-height     : 1.2;
+    font-weight     : 600;
+    text-decoration : none;
+}
+
+.post-comment__date {
+    color           : #bcbcbc;
+    font-size       : 14px;
+    line-height     : 1;
+    font-weight     : 400;
+    text-decoration : none;
+    white-space     : nowrap;
+}
+
+.post-comment__date:before {
+    content        : "";
+    display        : inline-block;
+    vertical-align : middle;
+    width          : 6px;
+    height         : 6px;
+    border-radius  : 50%;
+    margin         : 0 10px 0 0;
+    background     : #bcbcbc;
+}
+
+.post-comment__reply-to {
+    color           : #bcbcbc;
+    font-size       : 14px;
+    line-height     : 1;
+    font-weight     : 400;
+    text-decoration : none;
+    white-space     : nowrap;
+}
+
+.post-comment__reply-to:before {
+    content        : "";
+    display        : inline-block;
+    vertical-align : middle;
+    width          : 16px;
+    height         : 14px;
+    margin         : 0 10px 0 0;
+    background     : url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAOCAQAAACMJlQBAAAAyUlEQVQYGX3BPysEYAAH4B8TqyxHLCYlJYryAUwmE8t9ADaL1aYMpofRrliUrnwAWUyixCVJMlKK6CV/L517nuQP4ybTinXFUv5nxZEbtTSj07Arm4lrd7rSyKILz55cquadXcVYPqk482jDlEp+WHVvNok+xXaaUFeSuLedD3pMGNGRDw7VDcaCh8SQLSfO1RVriX4PjrUlcaBqXrFvRl+iZkOPYief1Jy6NZovVl15tJxvXrxqzw9riun8UsylgQG9aWRPd1p4A8UQbLqur52HAAAAAElFTkSuQmCC') 0 0 no-repeat;
+}
+
+.post-comment__message {
+    display     : block;
+    color       : #000;
+    font-size   : 14px;
+    line-height : 1.5;
+    font-weight : 400;
+}
+
+.post-comment__message p {
+    margin : 0 0 15px;
+}
+
+@media (max-width : 767px) {
+    .post-comment__section_header,
+    .post-comment__section_content {
+        padding-left : 50px;
+    }
+
+    .post-comment__section_header {
+        padding-top : 9px;
+    }
+
+    .post-comment__avatar {
+        width  : 40px;
+        height : 40px;
+    }
+}

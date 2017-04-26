@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+    <meta content="IE=edge" http-equiv=X-UA-Compatible>
+    <meta content="width=device-width,initial-scale=1" name=viewport>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Solutions Factory</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="blocks/breadcrumb/breadcrumb.css" rel="stylesheet">
+    <link href="blocks/subscription/subscription.css" rel="stylesheet">
+    <link href="blocks/post/post.css" rel="stylesheet">
+    <link href="blocks/post-comment/post-comment.css" rel="stylesheet">
+    <link href="blocks/post-comments/post-comments.css" rel="stylesheet">
+    <link href="blocks/promo-post/promo-post.css" rel="stylesheet">
+    <link href="blocks/publication/publication.css" rel="stylesheet">
+    <link href="blocks/rubrics/rubrics.css" rel="stylesheet">
+    <link href="blocks/main-menu/main-menu.css" rel="stylesheet">
+    <link href="blocks/header/header.css" rel="stylesheet">
+    <link href="blocks/footer/footer.css" rel="stylesheet">
+    <link href="blocks/page/page.css" rel="stylesheet">
+</head>
+<body class="page">
+<header class="page__header">
+    <div class="header">
+        <div class="header__row header__row_actions">
+            <a href="/" title="sf" rel="home" class="header__logo"></a>
+            <div class="header__callback">
+                <div class="header__phone">8 (495) 255-31-35</div>
+                <div class="header__action">Оставить заявку</div>
+            </div>
+            <div class="header__menu-toggle"></div>
+        </div>
+        <div class="header__row header__row_menu">
+            <div class="header__menu">
+                <ul class="main-menu">
+                    <li class="main-menu__item main-menu__item_has_children">
+                        <a class="main-menu__link" href="#">Услуги</a>
+                        <ul class="main-menu">
+                            <li class="main-menu__item">
+                                <a class="main-menu__link" href="#">Проектное исследование</a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a class="main-menu__link" href="#">Отчетность</a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a class="main-menu__link" href="#">SMM</a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a class="main-menu__link" href="#">Рекламная компания</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-menu__item main-menu__item_active">
+                        <a class="main-menu__link" href="#">Ход работ</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="#">Люди</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="#">Блог</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="page__content">
+    <div class="page__breadcrumb">
+        <ul class="breadcrumb">
+            <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
+            <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Блог</a></li>
+            <li class="breadcrumb__item">Денис Рудик</li>
+        </ul>
+    </div>
+
+    <div class="promo-post" style="background-image:url('img/promo-post.jpg')">
+        <div class="promo-post__content">
+            <div class="promo-post__section promo-post__section_rating">
+                <div class="promo-post__rating" data-value="13,2"></div>
+            </div>
+            <div class="promo-post__section promo-post__section_header">
+                <div class="promo-post__section promo-post__section_type">
+                    <div class="promo-post__type">Кейсы</div>
+                </div>
+                <div class="promo-post__section promo-post__section_title">
+                    <h1 class="promo-post__title">Проработанная стратегия рекламной кампании по всем каналам</h1>
+                </div>
+            </div>
+            <div class="promo-post__section promo-post__section_clip">
+                <div class="promo-post__section promo-post__section_footer">
+                    <div class="promo-post__section promo-post__section_author">
+                        <a href="#" class="promo-post__author">
+                            <div class="promo-post__author-avatar" style="background-image:url('/sf/img/author_1.jpg')"></div>
+                            <div class="promo-post__section promo-post__section_author-name">
+                                <span class="promo-post__author-name">Констатнтин Константинопольский</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="promo-post__section promo-post__section_stats">
+                        <div class="promo-post__stat promo-post__stat_likes" data-value="17"></div>
+                        <a href="#" class="promo-post__stat promo-post__stat_comments" data-value="12"></a>
+                        <div class="promo-post__stat promo-post__stat_views" data-value="128"></div>
+                    </div>
+                    <div class="promo-post__section promo-post__section_date">
+                        <div class="promo-post__date">1 день назад</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="post__content">
+        <h2>Что такое сегменты в Google Analytics?</h2>
+        <p>Сегмент — набор данных, соответствующих неким критериям. Сегмент можно настроить в зависимости от:</p>
+        <ul>
+            <li>демографических показателей;</li>
+            <li>используемых устройств и технологий;</li>
+            <li>поведения пользователей;</li>
+            <li>целевых действий;</li>
+            <li>источников трафика;</li>
+            <li>даты первого сеанса;</li>
+        </ul>
+        <p>Все перечисленные критерии можно использовать по отдельности или одновременно. Например, создать сегмент женщин в возрасте 25-35 лет, которые перешли на сайт из контекстной рекламы во время предновогодней акции, провели на сайте более четырех минут, но ничего не купили.</p>
+        <p>В одном отчете вы можете сравнивать не более четырех разных сегментов.</p>
+        <blockquote>Применять сегменты можно к стандартным и пользовательским отчетам. Нельзя использовать сегменты в отчетах в режиме реального времени, также возможности сегментов ограничены при анализе многоканальных последовательностей и атрибуции.</blockquote>
+
+        <h2>Как применить сегмент в отчете?</h2>
+        <p>Для начала возьмем простую задачу: сравнить новых и вернувшихся пользователей, в зависимости от того попали они на сайт с органики или платного трафика.</p>
+        <p>Перейдите по пути «Аудитория» — «Поведение» — «Новые и вернувшиеся» и нажмите «+Добавить сегмент».</p>
+        <img src="img/post-image_1.jpg">
+        <p>К начальным настройкам OpenMP мы отнесем задание числа параллельных потоков с использованием следующей функции OpenMP:</p>
+        <pre>omp_set_num_threads(8);</pre>
+
+        <h2>Используем фильтры и сортировку (Where, Order by)</h2>
+        <p>Переходим на лист Level_2. Выберем только некоторые нужные нам поля и зададим условия фильтрации и сортировки. Например, используем данные только по кампаниям Campaign_1 и Campaign_2 за период 22-25 октября 2015 года. Отсортируем их в порядке убывания по сумме сеансов. Для фильтра и сортировки в текст запроса необходимо добавить описание кляуз Where и Order. Для вывода в результирующую таблицу описанного выше примера нам понадобятся поля Campaign, Date и Sessions. Именно их и нужно перечислить в кляузе Select.</p>
+        <img src="img/post-image_2.jpg">
+        <table>
+            <tr>
+                <th>Функция</th>
+                <th>Описание</th>
+                <th>Поддерживаемый тип данных</th>
+                <th>Возвращаемый тип данных</th>
+            </tr>
+            <tr>
+                <td>avg()</td>
+                <td>Возвращает среднее значение для группы</td>
+                <td>Числовой</td>
+                <td>Числовой</td>
+            </tr>
+            <tr>
+                <td>avg()</td>
+                <td>Возвращает среднее значение для группы</td>
+                <td>Числовой</td>
+                <td>Числовой</td>
+            </tr>
+            <tr>
+                <td>avg()</td>
+                <td>Возвращает среднее значение для группы</td>
+                <td>Числовой</td>
+                <td>Числовой</td>
+            </tr>
+            <tr>
+                <td>avg()</td>
+                <td>Возвращает среднее значение для группы</td>
+                <td>Числовой</td>
+                <td>Числовой</td>
+            </tr>
+            <tr>
+                <td>avg()</td>
+                <td>Возвращает среднее значение для группы</td>
+                <td>Числовой</td>
+                <td>Числовой</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="post__section post__section_rating">
+        <div class="post__rating-score">
+            <span>☆</span><span class="active">☆</span><span>☆</span><span>☆</span><span>☆</span>
+        </div>
+        <div class="post__rating-description">13,2 ( на основе 24 оценок)</div>
+    </div>
+
+    <div class="post__section post__section_tags">
+        <div class="post__tag">Google Analytics</div>
+        <div class="post__tag">советы для бизнеса</div>
+        <div class="post__tag">кейсы по веб-аналитике</div>
+        <div class="post__tag">идеи для маркетинга</div>
+        <div class="post__tag">таблицы Google аналитика</div>
+    </div>
+
+    <div class="post__section post__section_author">
+        <div class="post__author">
+            <div class="post__section post__section_author-column-1">
+                <div class="post__author-avatar" style="background-image:url('/sf/img/author_1.jpg')"></div>
+                <div class="post__section post__section_author-links">
+                    <a href="#" class="post__author-link post__author-link_fb"></a>
+                    <a href="#" class="post__author-link post__author-link_tw"></a>
+                </div>
+            </div>
+            <div class="post__section post__section_author-column-2">
+                <div class="post__section post__section_author-name">
+                    <span class="post__author-name">Георгий Рябой</span>
+                </div>
+                <div class="post__section post__section_author-description">
+                    <div class="post__author-description">
+                        <p>Главный редактор блога Netpeak.</p>
+                        <p>В команде блога с 2014 года.</p>
+                        <p>В личном архиве с 2004 года — публикации в газетах и журналах, вычитка книг, несколько сборников, копирайтерские галеры новостных сайтов, должности редактора ленты и администратора форума, букет спецпроектов.</p>
+                        <p>Авторы, желающие опубликовать свой пост в блоге, иногда мне звонят, но лучше все-таки писать:
+                            g.ryaboy@netpeak.net.</p>
+                    </div>
+                </div>
+                <div class="post__section post__section_author-posts">
+                    <a href="#" class="post__author-posts">Другие статьи автора</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="post__comments">
+        <div class="post-comments">
+            <div class="post-comments__section post-comments__section_header">
+                <div class="post-comments__section post-comments__section_title">
+                    <div class="post-comments__title">Комментарии <span class="post-comments__counter">(3)</span></div>
+                </div>
+                <div class="post-comments__section post-comments__section_order-by">
+                    <div class="post-comments__order-by">По порядку</div>
+                    <div class="post-comments__order-by post-comments__order-by_active">Сначала новые</div>
+                    <div class="post-comments__order-by">По рейтингу</div>
+                </div>
+            </div>
+
+            <div class="post-comments__section post-comments__section_new-comment">
+                <div class="post-comments__section post-comments__section_login">
+                    <div class="post-comments__user">
+                        <div class="post-comments__user-avatar"></div>
+                        <div class="post-comments__section post-comments__section_providers">
+                            <div class="post-comments__user-providers">
+                                <div class="post-comments__user-provider post-comments__user-provider_fb"></div>
+                                <div class="post-comments__user-provider post-comments__user-provider_vk"></div>
+                                <div class="post-comments__user-provider post-comments__user-provider_tw"></div>
+                                <div class="post-comments__user-provider post-comments__user-provider_yt"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-comments__section post-comments__section_form">
+                    <textarea class="post-comments__message" title="Присоедениться к обсуждению" placeholder="Присоедениться к обсуждению"></textarea>
+                </div>
+            </div>
+
+            <div class="post-comments__section post-comments__section_comments">
+                <div class="post-comment">
+                    <div class="post-comment__section post-comment__section_header">
+                        <a href="#" class="post-comment__avatar" style="background-image:url('img/comment_1.jpg')"></a>
+                        <a href="#" class="post-comment__user">Valentin</a>
+                        <div href="#" class="post-comment__date">5 дней назад</div>
+                    </div>
+                    <div class="post-comment__section post-comment__section_content">
+                        <div class="post-comment__section post-comment__section_message">
+                            <div class="post-comment__message">
+                                <p>Ага, спасибо.<br>
+                                    1) По поводу нехватки памяти. У меня 12Гб оперативы (и Core i5 годовалой свежести). Так что, думаю, в программе все же больше баг, чем фича. Если что - ОС Вин 10ка 64.</p>
+                                <p>2) Реализация промежуточного сохранения в основном в серверных вариантах. Ну и в каких-то программах оно все же есть. О, вспомнил - кейколлектор же :D. К слову... а почему бы вам не юзать SQLite например? Офигенная вещь, не требует никаких драйверов и прочей ерунды, и умел раньше в память разворачивать таблицы, когда скорость нужна. Просто в случае работы с СУБД вопрос промежуточного сохранения данных очень прост.</p>
+                                <p>3) По поводу IMG и ALT. Теперь ясно почему. Но это же нарушает логику. Т.е. ок, мы среагировали на то, что в счетчиках метрик не указывают ALT. Ок, но для продвижения сайта это же бесполезная информация). Я же не могу позвонить в Метрику и сказать "а что это вы нарушаете рекомендации W3C". Значит должна быть какая-то настройка с фильтрацией, что ли.</p>
+                                <p>4) Насчет лаунчера... мелочь конечно, однако замечу что не все знакомы с игровой индустрией. Есть много людей которые играли последний раз в универе. И лаунчер их будет очень сильно удивлять :). Я понимаю что звучит странно, но, - да, не все еще подсели на игры). Например я хороший процессор брал не для игр, а потому что у меня может пара виртуальных ОС крутится в фоне и 3 браузера с 20-30 владками открытыми в каждом.</p>
+                            </div>
+                        </div>
+                        <div class="post-comment__section post-comment__section_answer">
+                            <div class="post-comment__answer">
+                                <div class="post-comment">
+                                    <div class="post-comment__section post-comment__section_header">
+                                        <a href="#" class="post-comment__avatar" style="background-image:url('img/comment_2.jpg')"></a>
+                                        <a href="#" class="post-comment__user">Георгий</a>
+                                        <a href="#" class="post-comment__reply-to">Valentin</a>
+                                        <div class="post-comment__date">5 дней назад</div>
+                                    </div>
+                                    <div class="post-comment__section post-comment__section_content">
+                                        <div class="post-comment__section post-comment__section_message">
+                                            <div class="post-comment__message">
+                                                <p>Ага, спасибо.<br>
+                                                    1) По поводу нехватки памяти. У меня 12Гб оперативы (и Core i5 годовалой свежести). Так что, думаю, в программе все же больше баг, чем фича. Если что - ОС Вин 10ка 64.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-comment">
+                                    <div class="post-comment__section post-comment__section_header">
+                                        <a href="#" class="post-comment__avatar"></a>
+                                        <a href="#" class="post-comment__user">Георгий</a>
+                                        <a href="#" class="post-comment__reply-to">Valentin</a>
+                                        <div class="post-comment__date">5 дней назад</div>
+                                    </div>
+                                    <div class="post-comment__section post-comment__section_content">
+                                        <div class="post-comment__section post-comment__section_message">
+                                            <div class="post-comment__message">
+                                                <p>Ага, спасибо.<br>
+                                                    1) По поводу нехватки памяти. У меня 12Гб оперативы (и Core i5 годовалой свежести). Так что, думаю, в программе все же больше баг, чем фича. Если что - ОС Вин 10ка 64.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-comment">
+                    <div class="post-comment__section post-comment__section_header">
+                        <a href="#" class="post-comment__avatar"></a>
+                        <a href="#" class="post-comment__user">Valentin</a>
+                        <div class="post-comment__date">5 дней назад</div>
+                    </div>
+                    <div class="post-comment__section post-comment__section_content">
+                        <div class="post-comment__section post-comment__section_message">
+                            <div class="post-comment__message">
+                                <p>Ага, спасибо.<br>
+                                    1) По поводу нехватки памяти. У меня 12Гб оперативы (и Core i5 годовалой свежести). Так что, думаю, в программе все же больше баг, чем фича. Если что - ОС Вин 10ка 64.</p>
+                                <p>2) Реализация промежуточного сохранения в основном в серверных вариантах. Ну и в каких-то программах оно все же есть. О, вспомнил - кейколлектор же :D. К слову... а почему бы вам не юзать SQLite например? Офигенная вещь, не требует никаких драйверов и прочей ерунды, и умел раньше в память разворачивать таблицы, когда скорость нужна. Просто в случае работы с СУБД вопрос промежуточного сохранения данных очень прост.</p>
+                                <p>3) По поводу IMG и ALT. Теперь ясно почему. Но это же нарушает логику. Т.е. ок, мы среагировали на то, что в счетчиках метрик не указывают ALT. Ок, но для продвижения сайта это же бесполезная информация). Я же не могу позвонить в Метрику и сказать "а что это вы нарушаете рекомендации W3C". Значит должна быть какая-то настройка с фильтрацией, что ли.</p>
+                                <p>4) Насчет лаунчера... мелочь конечно, однако замечу что не все знакомы с игровой индустрией. Есть много людей которые играли последний раз в универе. И лаунчер их будет очень сильно удивлять :). Я понимаю что звучит странно, но, - да, не все еще подсели на игры). Например я хороший процессор брал не для игр, а потому что у меня может пара виртуальных ОС крутится в фоне и 3 браузера с 20-30 владками открытыми в каждом.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="promo-post promo-post_subscription" style="background-image:url('img/promo-post.jpg')">
+        <div class="promo-post__content">
+            <div class="promo-post__section promo-post__section_rating">
+                <div class="promo-post__rating" data-value="13,2"></div>
+            </div>
+            <div class="promo-post__section promo-post__section_header">
+                <div class="promo-post__section promo-post__section_type">
+                    <div class="promo-post__type">Кейсы</div>
+                </div>
+                <div class="promo-post__section promo-post__section_author">
+                    <a href="#" class="promo-post__author">
+                        <div class="promo-post__section promo-post__section_author-name">
+                            <span class="promo-post__author-name">Констатнтин Константинопольский</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="promo-post__section promo-post__section_title">
+                    <a href="#" class="promo-post__title">Проработанная стратегия рекламной кампании по всем каналам</a>
+                </div>
+                <div class="promo-post__section promo-post__section_clip">
+                    <div class="promo-post__section promo-post__section_footer">
+                        <div class="promo-post__section promo-post__section_date">
+                            <div class="promo-post__date">18.04.17</div>
+                        </div>
+                        <div class="promo-post__section promo-post__section_stats">
+                            <div class="promo-post__stat promo-post__stat_likes" data-value="17"></div>
+                            <a href="#" class="promo-post__stat promo-post__stat_comments" data-value="12"></a>
+                            <div class="promo-post__stat promo-post__stat_views" data-value="128"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="promo-post__section promo-post__section_subscription">
+                <form class="subscription">
+                    <div class="subscription__section subscription__section_title">
+                        <span class="subscription__title">Узнай первым!</span>
+                    </div>
+                    <div class="subscription__section subscription__section_description">
+                        <span class="subscription__description">Вы будете получать подборку наиболее интересных и полезных статей от нас</span>
+                    </div>
+                    <div class="subscription__section subscription__section_control">
+                        <input class="subscription__input" placeholder="E-mail" type="text">
+                    </div>
+                    <div class="subscription__section subscription__section_control">
+                        <input class="subscription__submit" type="submit" value="Отправить">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="rubrics">
+        <div class="rubrics__row">
+            <div class="rubrics__sorters">
+                <div class="rubrics__hashtag">#SEO</div>
+                <div class="rubrics__sorter">свежее</div>
+                <div class="rubrics__sorter rubrics__sorter_active">популярное</div>
+                <div class="rubrics__sorter">читаемое</div>
+                <div class="rubrics__sorter">обсуждаемое</div>
+            </div>
+        </div>
+
+        <div class="rubrics__row rubrics__row_publication">
+            <div class="rubrics__publication">
+                <div class="publication">
+                    <div class="publication__row">
+                        <a href="#" class="publication__image-link"><img class="publication__image" src="img/publication_1.jpg"></a>
+                        <a href="#" class="publication__type">#Веб-аналитика</a>
+                    </div>
+                    <div class="publication__row">
+                        <a href="#" class="publication__author">Степан Чумаченко</a>
+                    </div>
+                    <div class="publication__row">
+                        <a href="#" class="publication__title">Всемогущая функция Query — подробное руководство</a>
+                    </div>
+                    <div class="publication__row">
+                        <div class="publication__teaser">Стоит ли подключать автоматические стратегии управления ставками? Мы проверили, как работает «Целевая цена за конверсию» в разных тематиках.</div>
+                    </div>
+                    <div class="publication__row">
+                        <div class="publication__stats">
+                            <div class="publication__likes" data-value="17"></div>
+                            <a href="#" class="publication__comments" data-value="12"></a>
+                            <div class="publication__views" data-value="128"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rubrics__publication">
+                <div class="publication">
+                    <div class="publication__row">
+                        <a href="#" class="publication__image-link"><img class="publication__image" src="img/publication_2.jpg"></a>
+                        <a href="#" class="publication__type">#РРС</a>
+                    </div>
+                    <div class="publication__row">
+                        <a href="#" class="publication__author">Андрей Логинов</a>
+                    </div>
+                    <div class="publication__row">
+                        <a href="#" class="publication__title">Как работать с Google Trends — подробное руководство для новичков</a>
+                    </div>
+                    <div class="publication__row">
+                        <div class="publication__teaser">B2B-cервис в нише телемедицины в нужное время постучался с партнерской программой к крупным игрокам американского рынка — и без дополнительных трат увеличил за 6 месяцев доход на 1983%, а клиентскую базу — более чем на 1000%.</div>
+                    </div>
+                    <div class="publication__row">
+                        <div class="publication__stats">
+                            <div class="publication__likes" data-value="17"></div>
+                            <a href="#" class="publication__comments" data-value="12"></a>
+                            <div class="publication__views" data-value="128"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rubrics__publication">
+                <div class="publication">
+                    <div class="publication__row">
+                        <a href="#" class="publication__image-link"><img class="publication__image" src="img/publication_1.jpg"></a>
+                        <a href="#" class="publication__type">#Веб-аналитика</a>
+                    </div>
+                    <div class="publication__row">
+                        <a href="#" class="publication__author">Степан Чумаченко</a>
+                    </div>
+                    <div class="publication__row">
+                        <a href="#" class="publication__title">Всемогущая функция Query — подробное руководство</a>
+                    </div>
+                    <div class="publication__row">
+                        <div class="publication__teaser">Стоит ли подключать автоматические стратегии управления ставками? Мы проверили, как работает «Целевая цена за конверсию» в разных тематиках.</div>
+                    </div>
+                    <div class="publication__row">
+                        <div class="publication__stats">
+                            <div class="publication__likes" data-value="17"></div>
+                            <a href="#" class="publication__comments" data-value="12"></a>
+                            <div class="publication__views" data-value="128"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rubrics__publication">
+                <div class="publication">
+                    <div class="publication__row">
+                        <a href="#" class="publication__image-link"><img class="publication__image" src="img/publication_2.jpg"></a>
+                        <a href="#" class="publication__type">#РРС</a>
+                    </div>
+                    <div class="publication__row">
+                        <a href="#" class="publication__author">Андрей Логинов</a>
+                    </div>
+                    <div class="publication__row">
+                        <a href="#" class="publication__title">Как работать с Google Trends — подробное руководство для новичков</a>
+                    </div>
+                    <div class="publication__row">
+                        <div class="publication__teaser">B2B-cервис в нише телемедицины в нужное время постучался с партнерской программой к крупным игрокам американского рынка — и без дополнительных трат увеличил за 6 месяцев доход на 1983%, а клиентскую базу — более чем на 1000%.</div>
+                    </div>
+                    <div class="publication__row">
+                        <div class="publication__stats">
+                            <div class="publication__likes" data-value="17"></div>
+                            <a href="#" class="publication__comments" data-value="12"></a>
+                            <div class="publication__views" data-value="128"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rubrics__row rubrics__row_more">
+            <div class="rubrics__more"></div>
+        </div>
+    </div>
+</div>
+<footer class="page__footer">
+    <div class="footer">
+        <div class="footer__container">
+            <div class="footer__group footer__group_1">
+                <div class="footer__column footer__column_1">
+                    <div class="footer__copyright">© 2016 SF.RU</div>
+                    <div class="footer__about">Консалтинг и управление проектами в сфере интернет-маркетинга</div>
+                    <div class="footer__socials">
+                        <div class="footer__social footer__social_fb"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                        <div class="footer__social footer__social_vk"><i class="fa fa-vk" aria-hidden="true"></i></div>
+                        <div class="footer__social footer__social_tw"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                        <div class="footer__social footer__social_yt"><i class="fa fa-youtube" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+                <div class="footer__column footer__column_2">
+                    <div class="footer__callback">
+                        <div class="footer__phone">8 (495) 255-31-35</div>
+                        <div class="footer__order">Оставить заявку</div>
+                    </div>
+                    <div class="footer__address">Московская область, г. Жуковский, ул. Мясищева, д. 1 (Бизнес-центр "Чайка")</div>
+                    <div class="footer__mail">ab@sf.ru</div>
+                </div>
+            </div>
+            <div class="footer__group footer__group_2">
+                <form class="footer__search">
+                    <button type="submit" class="footer__search_submit">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                    <div class="footer__search_input-wrapper">
+                        <input class="footer__search_input" placeholder="Поиск...">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://yastatic.net/jquery/3.1.1/jquery.min.js"></script>
+<script src="blocks/main-menu/main-menu.js"></script>
+</body>
+</html>
