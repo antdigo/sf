@@ -1,0 +1,331 @@
+.author,
+.author__section {
+    display : block;
+    margin  : 0;
+    padding : 0;
+}
+
+.author {
+    margin : 30px 0;
+}
+
+.author__section_container {
+    box-sizing  : border-box;
+    max-width   : 1210px;
+    margin      : 0 auto;
+    padding     : 0 20px;
+    font-size   : 0;
+    line-height : 1;
+}
+
+.author__section_profile-title {
+    box-sizing  : border-box;
+    max-width   : 1210px;
+    margin      : 35px auto 30px;
+    padding     : 0 20px;
+    font-size   : 0;
+    line-height : 1;
+}
+
+.author__section_main {
+    box-sizing : border-box;
+    overflow   : hidden;
+    padding    : 50px 0;
+    background : #f5f5f6;
+}
+
+.author__section_profile {
+
+}
+
+.author__section_avatar,
+.author__section_teaser,
+.author__section_rating {
+    box-sizing     : border-box;
+    display        : inline-block;
+    vertical-align : top;
+}
+
+.author__section_avatar {
+    width        : 200px;
+    margin-right : 70px;
+}
+
+.author__section_teaser {
+    width : calc(100% - 200px - 70px - 60px - 450px);
+}
+
+.author__section_rating {
+    width       : 450px;
+    margin-left : 60px;
+}
+
+.author__stats {
+    margin : 70px 0 10px;
+}
+
+.author__likes,
+.author__views {
+    display      : inline-block;
+    margin-right : 10px;
+    font-size    : 14px;
+    line-height  : 1.2;
+}
+
+.author__likes:before,
+.author__views:before {
+    display                 : inline-block;
+    vertical-align          : middle;
+    margin-right            : 5px;
+    font                    : normal normal normal 14px/1 FontAwesome;
+    font-size               : inherit;
+    text-rendering          : auto;
+    -webkit-font-smoothing  : antialiased;
+    -moz-osx-font-smoothing : grayscale;
+}
+
+.author__likes:after,
+.author__views:after {
+    content        : attr(data-value);
+    display        : inline-block;
+    vertical-align : middle;
+}
+
+.author__likes:before {
+    content : "\f08a";
+}
+
+.author__views:before {
+    content : "\f06e";
+}
+
+.author__avatar {
+    display       : block;
+    border-radius : 50%;
+    width         : 200px;
+    height        : 200px;
+    margin        : 0 auto;
+    background    : none 50% 50%/cover no-repeat #959595;
+}
+
+.author__name {
+    margin-bottom   : 15px;
+    color           : #000;
+    font-size       : 32px;
+    line-height     : 1.2;
+    font-weight     : 600;
+    text-decoration : none;
+}
+
+.author__position {
+    color           : #000;
+    font-size       : 18px;
+    line-height     : 1.2;
+    font-weight     : 400;
+    text-decoration : none;
+}
+
+.author__registration {
+    color           : #000;
+    font-size       : 14px;
+    line-height     : 1.5;
+    font-weight     : 400;
+    text-decoration : none;
+}
+
+.author__rating-bar {
+    overflow      : hidden;
+    position      : relative;
+    display       : block;
+    height        : 10px;
+    border-radius : 3px;
+    background    : #c7c7c7;
+}
+
+.author__rating-progress {
+    display    : block;
+    width      : 0;
+    position   : absolute;
+    top        : 0;
+    left       : 0;
+    bottom     : 0;
+    background : #e84810;
+}
+
+.author__rating-score {
+    margin-top  : 10px;
+    color       : #000;
+    font-size   : 26px;
+    line-height : 1.2;
+    font-weight : 600;
+    text-align  : center;
+}
+
+.author__section_rating:after {
+    content         : "Рейтинг показывает уровень вашей активности в блоге, а также то, как реагируют на ваши комментарии другие читатели.";
+    display         : block;
+    margin-top      : 90px;
+    color           : #bdbbbb;
+    font-size       : 14px;
+    line-height     : 1.5;
+    font-weight     : 400;
+    text-decoration : none;
+}
+
+.author__profile-title {
+    color       : #000;
+    font-size   : 39px;
+    line-height : 1.2;
+    font-weight : 300;
+}
+
+.author__column_profile,
+.author__column_about {
+    display        : inline-block;
+    vertical-align : top;
+}
+
+.author__column_profile {
+    width        : calc(100% - 450px - 100px);
+    margin-right : 100px;
+}
+
+.author__column_about {
+    width : 450px;
+}
+
+.author__column_profile .author__property {
+    margin-bottom : 20px;
+    padding-left  : 200px;
+    position      : relative;
+}
+
+.author__column_profile .author__property-name {
+    position : absolute;
+    top      : 0;
+    left     : 0;
+}
+
+.author__column_profile .author__property-name:after {
+    content : ":";
+    display : inline;
+}
+
+.author__column_profile .author__property-value {
+    font-weight : 600;
+    font-size   : 18px;
+}
+
+.author__property-name {
+    margin-bottom   : 10px;
+    color           : #9f9f9f;
+    font-size       : 18px;
+    line-height     : 1.2;
+    font-weight     : 400;
+    text-decoration : none;
+}
+
+.author__property-value {
+    color           : #000;
+    font-size       : 14px;
+    line-height     : 1.5;
+    font-weight     : 400;
+    text-decoration : none;
+}
+
+.author__property-tag {
+    display        : inline-block;
+    vertical-align : top;
+    border-radius  : 2px;
+    margin         : 0 10px 10px 0;
+    padding        : 5px 10px 6px;
+    background     : #f6f6f6;
+    color          : #000;
+    font-size      : 14px;
+    line-height    : 1.2;
+    font-weight    : 400;
+}
+
+.author__property-value p {
+    margin : 0 0 15px;
+}
+
+@media (max-width : 767px) {
+    .author__container {
+        padding : 0 20px;
+    }
+}
+
+@media (max-width : 1199px) {
+    .author__section_avatar,
+    .author__section_teaser,
+    .author__section_rating,
+    .author__column_profile,
+    .author__column_about {
+        display : block;
+        width   : 100%;
+        margin  : 0;
+    }
+
+    .author__section_avatar {
+        width    : 200px;
+        position : absolute;
+    }
+
+    .author__section_teaser,
+    .author__section_rating {
+        padding-left : 250px;
+    }
+
+    .author__section_rating {
+        margin-top : 50px;
+    }
+
+    .author__column_about .author__property {
+        margin-bottom : 20px;
+        padding-left  : 200px;
+        position      : relative;
+    }
+
+    .author__column_about .author__property-name {
+        position : absolute;
+        top      : 0;
+        left     : 0;
+    }
+
+    .author__column_about .author__property-name:after {
+        content : ":";
+        display : inline;
+    }
+}
+
+@media (max-width : 767px) {
+    .author__section_avatar,
+    .author__section_teaser,
+    .author__section_rating {
+        display  : block;
+        width    : 100%;
+        margin   : 0;
+        padding  : 0;
+        position : static;
+    }
+
+    .author__section_avatar {
+        margin-bottom : 30px;
+    }
+
+    .author__section_rating {
+        margin-top : 30px;
+    }
+
+    .author__column_about .author__property,
+    .author__column_profile .author__property {
+        padding-left : 0;
+    }
+
+    .author__column_about .author__property-name,
+    .author__column_profile .author__property-name {
+        position      : static;
+        margin-bottom : 5px;
+    }
+}
